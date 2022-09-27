@@ -7,6 +7,7 @@ procedure digito_mayor is
 --pre:
 --post:
 --salida:
+
 num,div,aux: integer;
 prev :integer := 0;
 begin
