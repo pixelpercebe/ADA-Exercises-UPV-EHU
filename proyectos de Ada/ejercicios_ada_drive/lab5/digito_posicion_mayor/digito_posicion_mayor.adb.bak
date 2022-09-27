@@ -1,0 +1,10 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO;
+USE Ada.Text_IO,Ada.Integer_Text_IO;
+
+
+PROCEDURE Digito_Posicion_Mayor IS
+
+BEGIN
+   Sub_Digito_Posicion_Mayor(198);
+
+end Digito_Posicion_Mayor;

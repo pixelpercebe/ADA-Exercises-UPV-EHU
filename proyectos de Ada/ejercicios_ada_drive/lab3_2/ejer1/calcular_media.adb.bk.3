@@ -1,0 +1,32 @@
+With Ada.Integer_Text_IO,Ada.Text_IO,Ada.Float_Text_IO;
+Use Ada.Integer_Text_IO,Ada.Text_IO,Ada.Float_Text_IO;
+
+PROCEDURE Calcular_Media IS
+
+   --Especificacion
+   --entrada:
+   --pre:
+   --salida:
+   --pos:
+
+  cont,num,suma:integer;
+  media:float;
+
+begin
+   Suma := 0;
+   cont := 0;
+  while not End_Of_File loop
+    get(num);
+    suma:= suma+num;
+    cont := cont + 1;
+  end loop;
+
+  if cont /= 0 then
+  media := float(suma)/float(cont);
+  Put(Media, 0,2,0);
+   ELSE
+      media:= 0.00;
+      Put(Media);
+   end if;
+
+end calcular_media;

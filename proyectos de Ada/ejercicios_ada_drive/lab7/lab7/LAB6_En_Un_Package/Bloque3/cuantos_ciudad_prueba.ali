@@ -1,0 +1,71 @@
+V "GNAT Lib v2013"
+M P W=b
+A -gnatwu
+A -gnat05
+P ZX
+
+RN
+RV NO_IO
+RV SPARK
+
+U cargar_escribir_lista_personas_prueba%b  cuantos_ciudad_prueba.adb  e8c6b0e7 NE OO SU KU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W lista_personas%s	lista_personas.adb	lista_personas.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-inteio.ads		20130417131020 f64b89a4
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tiinio.ads		20130417131022 aa04e5d6
+D a-unccon.ads		20130417131022 f9eb8f06
+D cuantos_ciudad_prueba.adb  20211112201256 76fd6946
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D lista_personas.ads	20211112191058 501da5d1
+D persona.ads		20211112083310 4854843f
+D system.ads		20130417131036 5fc8ae56
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+D vector_personas.ads	20211112185636 fc0ca069
+X 1 ada.ads
+16K9*Ada 19e8 11|1r6 1r19 2r5 2r18
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 11|1w23 2r22
+X 8 a-textio.ads
+49K13*Text_IO 471e16 11|1w10 2r9
+166U14*New_Line 11|16s4 23s4 30s4
+242U14*Put 11|10s4 17s4 24s4 31s4
+263U14*Put_Line 11|11s4 14s4 18s4 21s4 25s4 28s4 32s4 35s4
+X 9 a-tiinio.ads
+65U14*Put 11|13s4[4|18] 20s4[4|18] 27s4[4|18] 34s4[4|18]
+X 11 cuantos_ciudad_prueba.adb
+6U11*Cargar_Escribir_Lista_Personas_Prueba 6b11 36l5 36t42
+7r4 L{14|5R9} 10m66 12r22 13r8 17m76 19r22 20r8 24m75 26r22 27r8 31m77 33r22
+. 34r8
+X 14 lista_personas.ads
+3K9*Lista_Personas 11|3w6 4r5 14|22e19
+5R9*T_Lista_Personas 11|7r7 14|8e14
+7i7*Cont{integer} 11|13r10 20r10 27r10 34r10
+11U14*Cargar_Personas 11|10s33 17s43 24s42 31s43
+18U14*Escribir_Personas 11|12s4 19s4 26s4 33s4
+

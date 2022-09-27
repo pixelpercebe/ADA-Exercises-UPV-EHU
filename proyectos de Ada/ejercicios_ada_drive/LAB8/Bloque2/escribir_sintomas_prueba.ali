@@ -1,0 +1,74 @@
+V "GNAT Lib v2013"
+M P W=b
+A -gnatwu
+A -gnat05
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK
+
+U escribir_sintomas_prueba%b  escribir_sintomas_prueba.adb  8a768081 NE OO SU IL KU
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W lista_sintomas%s	lista_sintomas.adb	lista_sintomas.ali
+W sintoma%s		sintoma.adb		sintoma.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-unccon.ads		20130417131022 f9eb8f06
+D escribir_sintomas_prueba.adb  20211129145414 0f10cb60
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D lista_sintomas.ads	20211122181618 8e026a4c
+D sintoma.ads		20211119093338 3309d479
+D system.ads		20130417131036 5fc8ae56
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 9|2r6 2r23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 9|2w10 2r27
+263U14*Put_Line 9|20s4
+X 9 escribir_sintomas_prueba.adb
+4U11*escribir_sintomas_prueba 4b11 22l5 22t29
+6U14 Cargar_Lista_Sintomas 6b14 6<37 13l8 13t29 18s4
+6p37 L{12|6P9} 9m7 10m7 10r40 11m7 11r40 12m7 12r46
+15p4 Act{12|6P9} 18m26 18r26 21r22
+X 12 lista_sintomas.ads
+4K9*Lista_Sintomas 9|1w15 1r44 12|22e19
+5R9*T_nodo_Sintomas 9|9r15 10r15 11r15 12r15 12|11e17
+6P9*A_Lista_Sintomas(5R9) 9|6r44 15r9
+13U14*Escribir_Sintomas 9|21s4
+X 13 sintoma.ads
+2K9*Sintoma 9|1w6 1r35 13|18e4
+6n11*Dolor_Cabeza{3E9} 9|12r32
+9n11*Fiebre{3E9} 9|11r32
+11n11*Mareos{3E9} 9|10r32
+13n7*Vomitos{3E9} 9|9r32
+

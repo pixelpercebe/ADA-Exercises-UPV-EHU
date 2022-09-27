@@ -1,0 +1,150 @@
+Maite Urretavizcaya
+Donostia
+true
+58
+2000,50
+Juan Gomez
+Azpeitia
+false
+53
+0
+Coro Perez
+Zarautz
+false
+60
+0
+Roberto Alberdi
+Irun
+true
+25
+1200
+Ana Zuazolacigorraga
+Azcoitia
+true
+30
+1500
+Ricardo Rodriguez
+Donostia
+false
+23
+0
+Marc Arregi
+Amorebieta
+false
+6
+0
+Ani Urretavizcaya
+Pamplona
+true
+57
+2000,50
+Juan Gomez
+Azpeitia
+false
+53
+0
+Ane Perez
+Zarautz
+false
+6
+0
+Roberto Zuazu
+Zarautz
+false
+12
+0
+Ana Zigordia
+Azcoitia
+true
+30
+2500
+Ricardo Jimenez
+Donostia
+false
+13
+0
+Marc Rodriguez
+Amorebieta
+true
+16
+1000
+Ruben Rodriguez
+Amorebieta
+true
+38
+2500
+Maite Urretavizcaya
+Donostia
+true
+58
+2000,50
+Juan Gomez
+Azpeitia
+false
+53
+0
+Coro Perez
+Zarautz
+false
+60
+0
+Roberto Alberdi
+Irun
+true
+25
+1200
+Ana Zuazolacigorraga
+Azcoitia
+true
+30
+1500
+Ricardo Rodriguez
+Donostia
+false
+23
+0
+Marc Arregi
+Amorebieta
+false
+6
+0
+Ani Urretavizcaya
+Pamplona
+true
+57
+2000,50
+Juan Gomez
+Azpeitia
+false
+53
+0
+Ane Perez
+Zarautz
+false
+6
+0
+Roberto Zuazu
+Zarautz
+false
+12
+0
+Ana Zigordia
+Azcoitia
+true
+30
+2500
+Ricardo Jimenez
+Donostia
+false
+13
+0
+Marc Rodriguez
+Amorebieta
+true
+16
+1000
+Ruben Rodriguez
+Amorebieta
+true
+38
+2500

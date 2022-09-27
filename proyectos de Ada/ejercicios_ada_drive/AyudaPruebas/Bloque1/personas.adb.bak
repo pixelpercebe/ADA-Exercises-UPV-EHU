@@ -1,0 +1,23 @@
+WITH Ada.Integer_Text_IO, Ada.Text_IO;
+USE Ada.Integer_Text_IO, Ada.Text_IO;
+
+PACKAGE BODY Personas IS
+
+   PROCEDURE Escribir_Personas (
+         V : T_Vector_Personas) IS
+   BEGIN
+      FOR I IN V'RANGE LOOP
+         Put(I, 3);
+         Put(": ");
+         Put(V(I).NombreApellidos);
+         Put(" - ");
+         Put(V(I).Ciudad);
+         Put("- ");
+         Put(Boolean'Image(V(I).Trabajando));
+         Put(V(I).Edad, 3);
+         New_Line;
+      END LOOP;
+
+   END Escribir_Personas;
+
+END Personas;

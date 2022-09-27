@@ -1,0 +1,74 @@
+V "GNAT Lib v2013"
+A -gnatwu
+A -gnat05
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK
+
+U lista_sintomas%b	lista_sintomas.adb	5c90653f NE OO PK KM
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U lista_sintomas%s	lista_sintomas.ads	bd0bbe35 EE NE OO PK KM
+W sintoma%s		sintoma.adb		sintoma.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D lista_sintomas.ads	20211122181618 8e026a4c
+D lista_sintomas.adb	20211129151048 eafffaa7
+D sintoma.ads		20211119093338 3309d479
+D system.ads		20130417131036 5fc8ae56
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 1r23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 1r27
+166U14*New_Line 12|10s10
+X 11 lista_sintomas.ads
+4K9*Lista_Sintomas 22l5 22e19 12|3b14 26l5 26t19
+5R9*T_nodo_Sintomas 6r36 7c9 11e17
+6P9*A_Lista_Sintomas(5R9) 10r15 14r11 19r31 12|5r14 6r8 16r31 17r11
+9e10*Sintoma{13|3E9} 12|9r26 19r39 22r39
+10p10*Sig{6P9} 12|11r19 20r20
+13U14*Escribir_Sintomas 14>7 12|4b14 13l8 13t25
+14p7 S{6P9} 12|5b10 6r26
+19V13*Esta_Sintoma{boolean} 19>28 19>49 12|16b13 23l8 23t20
+19p28 L{6P9} 12|16b28 17r31
+19e49 S{13|3E9} 12|16b49 19r49 22r49
+X 12 lista_sintomas.adb
+6p4 act{11|6P9} 8r13 9r22 11m10 11r15
+17p7 act{11|6P9} 19r14 19r35 20m10 20r16 22r14 22r35
+X 13 sintoma.ads
+2K9*Sintoma 11|1w6 2r5 13|18e4
+3E9*T_Sintoma 11|9r24 19r52 12|16r52 13|13e15
+15U14*Put_Sintoma 12|9s10
+

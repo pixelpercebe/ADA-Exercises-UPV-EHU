@@ -1,0 +1,31 @@
+WITH ADa.Text_IO; USE Ada.Text_IO;
+
+Package body Lista_Sintomas IS
+   PROCEDURE Escribir_Sintomas (
+         S : A_Lista_Sintomas) IS
+   act:a_lista_sintomas:=S;
+   BEGIN
+      WHILE Act/=NULL LOOP
+         act.sintoma
+      END LOOP;
+   END Escribir_Sintomas;
+
+
+   FUNCTION Esta_Sintoma  (L: A_Lista_Sintomas; S: T_Sintoma)  RETURN Boolean IS
+      Esta:Boolean:= false;
+      act:a_lista_sintomas := L;
+   BEGIN
+      WHILE  L.Sig /= NULL AND THEN L.sintoma/=S LOOP
+         IF L.Sintoma = S THEN
+            Esta := True;
+         END IF;
+         act:= act.sig;
+      END loop;
+      return esta;
+   END Esta_Sintoma;
+
+
+END Lista_Sintomas;
+
+
+

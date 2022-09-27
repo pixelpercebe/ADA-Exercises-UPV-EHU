@@ -1,0 +1,80 @@
+V "GNAT Lib v2013"
+A -gnatwu
+A -gnat05
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK
+
+U lista_personas%b	lista_personas.adb	01d43989 NE OO PK KU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W persona%s		persona.adb		persona.ali
+
+U lista_personas%s	lista_personas.ads	ac1105b8 EE NE OO PK KU
+W vector_personas%s	vector_personas.adb	vector_personas.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D lista_personas.ads	20211112191058 501da5d1
+D lista_personas.adb	20211112191114 21f0edb3
+D persona.ads		20211112083310 4854843f
+D system.ads		20130417131036 5fc8ae56
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+D vector_personas.ads	20211112185636 fc0ca069
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 2r5
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 2r9
+52P9*File_Type(369R9) 12|9r11
+53n23*In_File{53E9} 12|12r15
+92U14*Open 12|12s7
+98U14*Close 12|18s7
+183V13*End_Of_File{boolean} 12|13s17
+X 11 lista_personas.ads
+3K9*Lista_Personas 22l5 22e19 12|4b14 30l5 30t19
+5R9*T_Lista_Personas 8e14 11r49 18r37 12|8r21 23r14
+6a7*Lista{31|5A9} 12|15m12 26r29
+7i7*Cont{integer} 12|17m9 25r21
+11U14*Cargar_Personas 11>31 11<42 12|6b14 19l8 19t23
+11s31 S{string} 12|7b10 12r24
+11r42 L{5R9} 12|8b10 15m10 17m7
+18U14*Escribir_Personas 18>33 12|22b14 28l8 28t25
+18r33 L{5R9} 12|23b10 25r19 26r27
+X 12 lista_personas.adb
+9p7 F{7|52P9} 12m12 12r12 13r29 15r38 18m13 18r13
+10i7 I{integer} 14m10 14r14 15r18 17r16
+25i11 I{integer} 26r35
+X 13 persona.ads
+3K9*Persona 12|1w19 2r18 13|26e12
+14V13*Cargar_Persona{5R9} 12|15s23
+21U14*Escribir_Persona 12|26s10
+X 31 vector_personas.ads
+3K9*Vector_Personas 11|1w6 1r27 31|20e20
+5A9*T_Vector_Personas(13|5R9)<integer> 11|6r14
+

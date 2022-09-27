@@ -1,0 +1,71 @@
+V "GNAT Lib v2013"
+M P W=b
+A -gnatwu
+A -gnat05
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV SPARK
+
+U multiplicacion%b	multiplicacion.adb	5ed63e84 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-inteio.ads		20130417131020 f64b89a4
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tiinio.ads		20130417131022 aa04e5d6
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D multiplicacion.adb	20210927130518 90f042f4
+D system.ads		20130417131036 5fc8ae56
+D s-conca2.ads		20130417131028 fbd0f2fc
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-imgint.ads		20130417131030 02dbe0c2
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6 1r27 2r5 2r26
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 13|1w10 2r9
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|1w31 2r30
+166U14*New_Line 13|14s3
+242U14*Put 13|13s3 16s3
+X 9 a-tiinio.ads
+55U14*Get 13|15s3[4|18] 17s3[4|18]
+65U14*Put 13|31s3[4|18]
+X 13 multiplicacion.adb
+4U12*multiplicacion 4b12 33l5 33t19
+10i3 multiplicador{integer} 17m8 19r19 20r31 20r76 22r33 24r33
+10i18 multiplicando{integer} 12r15 15m7 16r21 20r9 20r54 21r39 22r11 23r19
+. 24r11 25r20
+10i33 producto{integer} 12m3 21m7 21r23 23m7 23r39 25m7 25r40 27m7 31r7
+19i7 n{integer}
+

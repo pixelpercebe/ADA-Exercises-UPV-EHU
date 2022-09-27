@@ -1,0 +1,88 @@
+V "GNAT Lib v2013"
+A -gnatwu
+A -gnat05
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK
+
+U sintoma%b		sintoma.adb		33095cf1 NE OO PK KU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
+W ada.text_io.enumeration_io%s
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.val_enum%s	s-valenu.adb		s-valenu.ali
+
+U sintoma%s		sintoma.ads		3309d479 EE NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tienau.ads		20130417131022 6a9c157b
+D a-tienio.ads		20130417131022 fc618ae6
+D a-tienio.adb		20130417131022 c9e6b5af
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D sintoma.ads		20211119093338 3309d479
+D sintoma.adb		20211119093404 386d7d5c
+D system.ads		20130417131036 5fc8ae56
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-imenne.ads		20130417131030 8707cbf0
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-valenu.ads		20130417131034 bb1a4295
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 15|1r6 2r5
+X 7 a-textio.ads
+49K13*Text_IO 471e16 15|1w10 2r9
+X 9 a-tienio.ads
+46k21*Enumeration_IO 75e31 15|7r33
+60U14 Put 15|10s7[7]
+X 14 sintoma.ads
+2K9*Sintoma 18e4 15|4b14 13l5 13t12
+3E9*T_Sintoma 13e15 15r29 15|6r14 7r49
+4n11*Amnea{3E9}
+5n11*Diarrea{3E9}
+6n11*Dolor_Cabeza{3E9}
+7n11*Dolor_Garganta{3E9}
+8n11*Dolor_Vientre{3E9}
+9n11*Fiebre{3E9}
+10n11*Malestar{3E9}
+11n11*Mareos{3E9}
+12n11*Tos{3E9}
+13n7*Vomitos{3E9}
+15U14*Put_Sintoma 15>26 15|5b14 11l8 11t19
+15e26 S{3E9} 15|6b10 10r11
+X 15 sintoma.adb
+7K15 Sintoma_IO[9|46] 8r11
+

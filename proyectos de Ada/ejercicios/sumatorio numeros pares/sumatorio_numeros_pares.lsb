@@ -1,0 +1,4 @@
+gcc: error: de: No such file or directory
+gcc: error: ada/ejercicios/sumatorio: No such file or directory
+gcc: error: numeros: No such file or directory
+gcc: error: pares/sumatorio_numeros_pares.adb: No such file or directory
