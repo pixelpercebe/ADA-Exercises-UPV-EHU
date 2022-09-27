@@ -3,6 +3,9 @@ use ada.text_IO,ada.integer_text_IO;
 
 procedure escribir_digitos is
 
+--especificacion
+--
+
 num,div,aux: integer;
 cont :integer := 0;
   
