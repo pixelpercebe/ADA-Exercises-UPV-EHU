@@ -5,4 +5,7 @@ procedure digito_mayor is
   num,div,aux: integer;
   prev :integer := 0;
 begin
+loop
+  
+end loop;
 end digito_mayor;
