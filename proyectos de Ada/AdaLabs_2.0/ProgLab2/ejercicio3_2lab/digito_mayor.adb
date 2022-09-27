@@ -5,5 +5,5 @@ procedure digito_mayor is
   num,div,aux: integer;
   prev :integer := 0;
 begin
-put("hola mundo");
+
 end digito_mayor;
