@@ -6,6 +6,5 @@ procedure digito_mayor is
   prev :integer := 0;
 begin
 loop
-  
 end loop;
 end digito_mayor;
