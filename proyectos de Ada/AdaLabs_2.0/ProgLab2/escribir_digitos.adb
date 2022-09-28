@@ -23,7 +23,7 @@ while div > 0 loop
   dig := div * 10;
   dig := num - aux;
   num := div;
-  put (aux,0);
+  put (dig,0);
   cont := cont + 1;
 end loop;
 put("  numero de digitos = " & integer'image(cont));
