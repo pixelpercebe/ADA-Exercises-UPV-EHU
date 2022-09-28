@@ -32,3 +32,9 @@ end loop;
 put("El mayor digito en el numero es:"& integer'image(mayor) & " y se encuentra en la posicion:" & integer'image(pos));
 
 end digito_mayor;
+
+--CASOS DE PRUEBA:
+--Caso1, minimo de ciclos (1ciclo): 5 ---> 
+--caso2, pocos ciclos (2 ciclos): 25 ---> 
+--caso3, varios ciclos (3 ciclos): 1780 ---> 
+--caso4, muchos ciclos (7 ciclos): 1876523 --->  

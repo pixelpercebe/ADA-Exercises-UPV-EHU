@@ -31,3 +31,9 @@ begin
   new_line;
   put("Resto:" & integer'image(remainder));
 end division;
+
+--CASOS DE PRUEBA:
+--Caso1, (dividendo impar entre divisor par)  divisor: 2 dividendo: 9 --->
+--caso2, (dividendo par entre divisor impar)  divisor: 3 dividendo: 20 --->
+--caso3, (dividendo y divisor par) divisor: 12 dividendo: 344 --->
+--caso4, (dividendo y divisor impar) divisor: 15 dividendo: 45 --->
