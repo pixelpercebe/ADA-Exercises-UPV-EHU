@@ -11,6 +11,7 @@ procedure calcular_triangular is
 num :integer;
 result : integer := 0;
 begin
+
 put("Introduce el numero del que quieres calcular el triangular: ");
 get(num);
 for i in 0..num loop
