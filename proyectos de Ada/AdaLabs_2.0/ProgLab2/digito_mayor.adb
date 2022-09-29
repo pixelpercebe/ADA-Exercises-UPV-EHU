@@ -34,7 +34,7 @@ put("El mayor digito en el numero es:"& integer'image(mayor) & " y se encuentra 
 end digito_mayor;
 
 --CASOS DE PRUEBA:
---Caso1, minimo de ciclos (1ciclo): 5 ---> 
---caso2, pocos ciclos (2 ciclos): 25 ---> 
---caso3, varios ciclos (3 ciclos): 1780 ---> 
---caso4, muchos ciclos (7 ciclos): 1876523 --->  
+--Caso1, minimo de ciclos (1ciclo): 5 ---> 5 y se encuentra en la posicion: 1
+--caso2, pocos ciclos (2 ciclos): 52 ---> 5 y se encuentra en la posicion: 1
+--caso3, varios ciclos (3 ciclos): 1920 ---> 9 y se encuentra en la posicion: 3
+--caso4, muchos ciclos (6 ciclos): 8876523 --->  8 y se encuentra en la posicion: 6

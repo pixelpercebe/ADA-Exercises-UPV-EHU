@@ -9,31 +9,34 @@ procedure division is
 --y quotient sera el valor de divident despues realizar todas las restas.
 --SALIDA: 2 integers con el cociente y el resto de la division entera, quotient y reminder (SE)
 
-  divisor, dividend, remainder, quotient : integer;
+  divisor, dividend,remainder :integer; 
+  quotient : integer := 0;
 begin
   Put("Introduce el dividendo: ");
   Get(dividend);
   Put("Introduce el divisor: ");
   Get(divisor);
+  remainder := dividend;
 
-  remainder := 0;
-  if dividend = 0 then
+  while remainder >= 1 loop
     remainder := dividend;
-    quotient := 0;
-  else
-    while dividend >= divisor loop
+    if dividend >= divisor then
       dividend := dividend - divisor;
-      remainder := remainder + 1;
-      quotient := dividend;
-    end loop;
-  end if;
+      quotient := quotient + 1;
+    else
+      divisor := 1;
+  end if;  
+  end loop;
+  
   put("cociente:" & integer'image(quotient));
   new_line;
   put("Resto:" & integer'image(remainder));
 end division;
 
 --CASOS DE PRUEBA:
---Caso1, (dividendo impar entre divisor par)  divisor: 2 dividendo: 9 --->
---caso2, (dividendo par entre divisor impar)  divisor: 3 dividendo: 20 --->
---caso3, (dividendo y divisor par) divisor: 12 dividendo: 344 --->
---caso4, (dividendo y divisor impar) divisor: 15 dividendo: 45 --->
+--caso1, (dividendo cero)= dividendo:0 divisor:7 ---> cociente: 0 Resto: 0
+--caso2, (divisor mayor que dividendo)= dividendo:4 divisor:5 ---> cociente: 0 Resto: 4
+--Caso3, (dividendo impar entre divisor par)= dividendo: 9 divisor: 2 ---> cociente: 4 Resto: 1
+--caso4, (dividendo par entre divisor impar)= dividendo: 20 divisor: 3 ---> cociente:6  Resto: 2
+--caso5, (dividendo y divisor par)= dividendo: 344 divisor: 12 ---> cociente: 28 Resto: 8
+--caso6, (dividendo y divisor impar)= dividendo: 45 divisor: 15 ---> cociente: 2 Resto: 0

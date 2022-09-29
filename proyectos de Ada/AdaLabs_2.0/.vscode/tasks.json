@@ -28,7 +28,7 @@
 			"detail": "Ejecuta el programa compilado anteriormente",
 			"type": "shell",
 			"windows": {
-				"command": "cd ${fileDirname} && IF EXIST \"entrada.txt\" (${fileBasenameNoExtension}.exe<entrada.txt) ELSE (${fileBasenameNoExtension}.exe)",
+				"command": "cd ${fileDirname} && IF EXIST \"entrada.txt\" (${fileBasenameNoExtension}.exe<entrada.txt) ELSE (${fileBasenameNoExtension}.exe)"
 			},
 			"command": "cd ${fileDirname} && ./${fileBasenameNoExtension}",
 			"presentation": {
@@ -46,7 +46,6 @@
 		{
 			"label": "3. Limpieza",
 			"detail": "Elimina todos los archivos generados por GNAT",
-			// Esto no debería ser necesario normalmente, ya que se aplican sistemas de limpieza de normal
 			"type": "shell",
 			"command": "cd ${fileDirname} && gnatclean ${fileBasenameNoExtension}",
 			"presentation": {
