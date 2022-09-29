@@ -16,18 +16,11 @@ begin
   Get(dividend);
   Put("Introduce el divisor: ");
   Get(divisor);
-  remainder := dividend;
-
-  while remainder >= 1 loop
-    remainder := dividend;
-    if dividend >= divisor then
-      dividend := dividend - divisor;
-      quotient := quotient + 1;
-    else
-      divisor := 1;
-  end if;  
+  while dividend - divisor >= 0 loop
+    quotient := quotient + 1;
+    dividend := dividend - divisor;
   end loop;
-  
+  remainder := dividend;
   put("cociente:" & integer'image(quotient));
   new_line;
   put("Resto:" & integer'image(remainder));
@@ -39,4 +32,4 @@ end division;
 --Caso3, (dividendo impar entre divisor par)= dividendo: 9 divisor: 2 ---> cociente: 4 Resto: 1
 --caso4, (dividendo par entre divisor impar)= dividendo: 20 divisor: 3 ---> cociente:6  Resto: 2
 --caso5, (dividendo y divisor par)= dividendo: 344 divisor: 12 ---> cociente: 28 Resto: 8
---caso6, (dividendo y divisor impar)= dividendo: 45 divisor: 15 ---> cociente: 2 Resto: 0
+--caso6, (dividendo y divisor impar)= dividendo: 45 divisor: 15 ---> cociente: 3 Resto: 0
