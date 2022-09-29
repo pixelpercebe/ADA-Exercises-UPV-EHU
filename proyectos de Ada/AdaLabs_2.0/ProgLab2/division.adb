@@ -16,11 +16,13 @@ begin
   Get(dividend);
   Put("Introduce el divisor: ");
   Get(divisor);
+
   while dividend - divisor >= 0 loop
     quotient := quotient + 1;
     dividend := dividend - divisor;
   end loop;
   remainder := dividend;
+  
   put("cociente:" & integer'image(quotient));
   new_line;
   put("Resto:" & integer'image(remainder));
