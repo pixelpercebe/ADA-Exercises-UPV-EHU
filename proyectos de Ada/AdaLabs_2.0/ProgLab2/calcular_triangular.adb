@@ -20,7 +20,7 @@ put(result,0);
 end calcular_triangular;
 
 --CASOS DE PRUEBA:
---caso1, numero pequeño: 3 ---> 6
---caso3, numero mediano: 5789 ---> 16759155
---caso4: numero mediano: 30000 ---> 450015000
---caso5: numero grande: 65535 ---> 2147450880
+--caso1, numero pequeño de ciclos: 3 ---> 6
+--caso3, numero mediano de ciclos: 5789 ---> 16759155
+--caso4: numero grande de ciclos: 30000 ---> 450015000
+--caso5: Numero muy grnade de ciclos: 65535 ---> 2147450880
