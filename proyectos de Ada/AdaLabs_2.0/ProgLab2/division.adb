@@ -9,7 +9,7 @@ procedure division is
 --y quotient sera el valor de divident despues realizar todas las restas.
 --SALIDA: 2 integers con el cociente y el resto de la division entera, quotient y reminder (SE)
 
-  divisor, dividend,remainder :integer; 
+  divisor, dividend,remainder : integer; 
   quotient : integer := 0;
 begin
   Put("Introduce el dividendo: ");
@@ -22,7 +22,7 @@ begin
     dividend := dividend - divisor;
   end loop;
   remainder := dividend;
-  
+
   put("cociente:" & integer'image(quotient));
   new_line;
   put("Resto:" & integer'image(remainder));
