@@ -7,7 +7,8 @@ procedure calcular_medias is
   media_impar , media_par : float := 0.00;
 
 begin
-
+  put("Introduce los datos para calcullar la medias: ");
+  
   while not end_of_file loop
     get(num);
 
