@@ -12,18 +12,24 @@ begin
 
   put("Introduce un numero para buscar sus multiplos: ");
   get(num);
-  new_line;
   Put("Introduce mas numeros para buscar su multiplo: ");
   get(multiplo);
   
-  while multiplo mod num /= 0 and then not End_Of_File loop
+  while num /= 0 and then not es_multiplo and then not End_Of_File loop
     get(multiplo);
+    es_multiplo := multiplo mod num = 0;
   end loop;
 
-  if (multiplo mod num = 0) then 
-    put("Existe un multiplo en la secuencia");
+  if (num = 0 and then multiplo = 0)
+    es_multiplo = true;
   else
-    put("NO existe multipllo en la secuencia");
+    es_multiplo = false;
+  end if;
+
+  if (multiplo mod num = 0 ) then 
+    es_multiplo := true;
+  end if;
+    Put(es_multiplo'img);
   end if;
 
 
