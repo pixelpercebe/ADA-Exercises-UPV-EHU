@@ -1,5 +1,5 @@
-with ada.text_IO, ada.integer_text_IO;
-use ada.text_IO, ada.integer_text_IO;
+with ada.text_IO, ada.integer_text_IO,ada.float_text_IO;
+use ada.text_IO, ada.integer_text_IO,ada.float_text_IO;
 
 procedure calcular_medias is
   num : integer;
@@ -20,13 +20,13 @@ begin
     end if;
 
     end loop;
-  media_impar := float(suma_impar) /float(cont_impar);
-  media_par := float(suma_par) /float(cont_par);
+  media_impar := float(suma_impar) / float(cont_impar);
+  media_par := float(suma_par) / float(cont_par);
 
   put("media impares: ");
-  put(media_impar'img);
+  put(media_impar,0,2,0);
   new_line;
   put("media pares: ");
-  put(media_par'img);
+  put(media_par,0,2,0);
 
 end calcular_medias;
