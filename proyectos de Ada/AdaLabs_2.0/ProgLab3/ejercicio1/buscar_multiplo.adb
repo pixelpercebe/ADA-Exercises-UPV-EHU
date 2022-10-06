@@ -6,7 +6,7 @@ use ada.text_IO, ada.integer_text_IO;
 procedure buscar_multiplos is
 
   num, multiplo :integer;
-  --es_multiplo : boolean := false;
+  es_multiplo : boolean := false;
 
 begin
 
@@ -20,17 +20,10 @@ begin
     es_multiplo := multiplo mod num = 0;
   end loop;
 
-  if (num = 0 and then multiplo = 0)
+  if (num = 0 and then multiplo = 0) then
     es_multiplo = true;
   else
     es_multiplo = false;
   end if;
-
-  if (multiplo mod num = 0 ) then 
-    es_multiplo := true;
-  end if;
-    Put(es_multiplo'img);
-  end if;
-
 
 end buscar_multiplos;
