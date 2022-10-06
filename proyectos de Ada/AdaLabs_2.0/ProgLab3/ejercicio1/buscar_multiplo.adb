@@ -21,9 +21,9 @@ begin
   end loop;
 
   if (num = 0 and then multiplo = 0) then
-    es_multiplo = true;
+    es_multiplo := true;
   else
-    es_multiplo = false;
+    es_multiplo := false;
   end if;
 
 end buscar_multiplos;
