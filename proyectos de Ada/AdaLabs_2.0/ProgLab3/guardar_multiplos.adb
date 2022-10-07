@@ -28,11 +28,10 @@ while not end_of_file(F) loop
     Skip_Line(F);
   else 
     get(F,char_actual);
-    Put(char_actual);
   end if;
 
   num:= char_prev & char_actual;
-  
+  put(num);
   char_prev := char_actual;
 
 
@@ -40,7 +39,8 @@ while not end_of_file(F) loop
     put(mult2_fich, num);
     put(mult2_fich, " ");
     num:= "";
-  elsif (char_actual = " " or else End_Of_Line(F)) and then Integer'value(char_actual) mod 3 = 0 then
+  end if;
+  if (char_actual = " " or else End_Of_Line(F)) and then Integer'value(char_actual) mod 3 = 0 then
     put(mult3_fich, num);
     put(mult3_fich, " ");
     num := "";
