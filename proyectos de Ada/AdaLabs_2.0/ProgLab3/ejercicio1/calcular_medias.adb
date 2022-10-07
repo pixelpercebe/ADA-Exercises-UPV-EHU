@@ -41,4 +41,4 @@ end calcular_medias;
 --caso1 una iteración: {1} --> media impares: 1.00, media pares: 0.00
 --caso2: dos iteraciones {1,2} --> media impares: 1.00, media pares: 2.00
 --caso3: varias iteraciones {4,12,3,6,5,2,8} --> media impares: 13.67, media pares: 8.00
---caso4: numeros negativos : {-4,-12,-3,-1,-5,5,2,8,3} --> media impares: -0.20, media pares: -1.50
+--caso4: numeros negativos : {-4,-12,-3,-1,-5, 5,2,8,3} --> media impares: -0.20, media pares: -1.50
