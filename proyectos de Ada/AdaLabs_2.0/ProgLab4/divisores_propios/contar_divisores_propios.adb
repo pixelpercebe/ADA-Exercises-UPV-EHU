@@ -1,5 +1,3 @@
-with ada.text_IO,ada.integer_text_IO;
-use ada.text_IO,ada.integer_text_IO;
 
 function contar_divisores_propios (num: in integer) return integer is 
 
