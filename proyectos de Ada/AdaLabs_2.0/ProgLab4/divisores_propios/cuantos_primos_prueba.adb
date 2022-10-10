@@ -6,14 +6,13 @@ procedure cuantos_primos_prueba is
 
 num : integer;
 cont : integer :=0;
+es : boolean := true;
 
 begin
 
 while not end_of_file loop
   Get(num);
-  if es_primo(num) then
-    cont := cont + 1;
-  end if;
+  cont := cont + boolean'pos(es_primo(num)); --convierto el valor booleano en su equivalente valor numerico, true = 1 y false = 0
 end loop;
 
 put(cont,0);

@@ -38,12 +38,10 @@ while not end_of_file(F) loop
   if (char_actual = " " or else End_Of_Line(F)) and then Integer'value(char_actual) mod 2 = 0 then
     put(mult2_fich, num);
     put(mult2_fich, " ");
-    num:= "";
   end if;
   if (char_actual = " " or else End_Of_Line(F)) and then Integer'value(char_actual) mod 3 = 0 then
     put(mult3_fich, num);
     put(mult3_fich, " ");
-    num := "";
   end if;
 
 

@@ -11,7 +11,7 @@ procedure contar_divisores_propios_prueba is
 
 begin
 
-put(contar_divisores_propios(12),0);
+put(contar_divisores_propios(1),0);
 
 
 
