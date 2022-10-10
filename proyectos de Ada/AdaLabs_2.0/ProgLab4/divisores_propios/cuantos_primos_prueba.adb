@@ -6,7 +6,6 @@ procedure cuantos_primos_prueba is
 
 num : integer;
 cont : integer :=0;
-es : boolean := true;
 
 begin
 
