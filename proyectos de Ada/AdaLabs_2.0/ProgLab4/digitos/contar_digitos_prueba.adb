@@ -5,7 +5,7 @@ procedure contar_digitos_prueba is
 
 begin
 
-put(contar_digitos(14565),0);
+  put(contar_digitos(14565),0);
 
 
 end contar_digitos_prueba;
