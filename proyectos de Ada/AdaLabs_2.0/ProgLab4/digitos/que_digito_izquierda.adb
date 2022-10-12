@@ -2,6 +2,12 @@ with contar_digitos;
 
 function que_digito_izquierda (num, pos : integer) return integer is
 
+--ESPECIFICACION
+--Entrada:
+--Pre:
+--Salida:
+--post:
+
   aux : integer := num;
 
 begin

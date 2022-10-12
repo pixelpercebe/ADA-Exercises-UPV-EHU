@@ -5,6 +5,12 @@ use ada.integer_text_IO, ada.text_IO;
 
 function esta_digito (num, dig : integer) return boolean is
 
+--ESPECIFICACION
+--Entrada:
+--Pre:
+--Salida:
+--post:
+
   cont : integer := 1;
   esta: boolean := false;
 
