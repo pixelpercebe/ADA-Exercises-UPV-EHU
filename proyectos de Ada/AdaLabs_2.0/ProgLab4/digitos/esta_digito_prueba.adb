@@ -9,3 +9,9 @@ begin
   put(esta_digito(1513,3)'img);
 
 end esta_digito_prueba;
+
+--casos de prueba:
+--caso1
+--caso2
+--caso3
+--caso4

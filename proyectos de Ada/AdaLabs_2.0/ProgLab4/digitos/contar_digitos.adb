@@ -2,10 +2,8 @@
 function contar_digitos (num : integer) return integer is
 
 --ESPECIFICACION
---Entrada:
---Pre:
---Salida:
---post:
+--Pre: 0 < num
+--post: de devolvera la cantidad de digitos que tiene le numero dado
 
 begin
 

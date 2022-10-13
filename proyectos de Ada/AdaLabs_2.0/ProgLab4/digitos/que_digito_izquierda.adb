@@ -3,10 +3,8 @@ with contar_digitos;
 function que_digito_izquierda (num, pos : integer) return integer is
 
 --ESPECIFICACION
---Entrada:
---Pre:
---Salida:
---post:
+--Pre: 0 < num y 0 < pos < 10
+--post: nos devolvera un integer que nos indicara en que posicion de num se encuentra dig
 
   aux : integer := num;
 
