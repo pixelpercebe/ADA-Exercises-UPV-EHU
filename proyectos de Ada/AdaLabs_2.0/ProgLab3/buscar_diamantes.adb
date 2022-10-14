@@ -14,6 +14,7 @@ procedure buscar_diamantes is
   F : File_Type ;
   nom_fich : String (1..9);
   char_actual,char_prev,mina_num: String(1..1);
+  
 begin
   put("En que mina quieres minar diamantes? introduce el numero de la mina 0, 1 o 2: ");
   get(mina_num);
