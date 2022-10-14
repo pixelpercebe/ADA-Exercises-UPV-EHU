@@ -3,7 +3,7 @@ use ada.text_IO, ada.integer_text_IO;
 
 
 
-procedure buscar_multiplos is
+procedure buscar_multiplo is
 
 --especificacion
 --entrada: Un numero entero, num y una secuencia de enteros, multiplo (EE)
@@ -19,6 +19,7 @@ begin
   get(num);
   Put("Introduce mas numeros para buscar su multiplo: ");
   
+  get(multiplo);
   while multiplo mod num /= 0 and then not End_Of_File and then num /= 0 loop
     get(multiplo);
   end loop;
@@ -33,7 +34,7 @@ begin
 
   Put(es_multiplo'img);
 
-end buscar_multiplos;
+end buscar_multiplo;
 
 
 --casos de prueba:
