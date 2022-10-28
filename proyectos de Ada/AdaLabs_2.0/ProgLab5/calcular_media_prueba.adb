@@ -11,7 +11,17 @@ begin
 
 
 
+  calcular_media(V1,impar,par);
+  Put(impar,0,2,0);
+  new_line;
+  put(par,0,2,0);
+  new_line;
   calcular_media(V2,impar,par);
+  Put(impar,0,2,0);
+  new_line;
+  put(par,0,2,0);
+  new_line;
+  calcular_media(V3,impar,par);
   Put(impar,0,2,0);
   new_line;
   put(par,0,2,0);
