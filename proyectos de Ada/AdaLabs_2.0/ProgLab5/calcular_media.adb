@@ -1,6 +1,9 @@
 with ada.integer_text_IO, tipos_lab5;
 use ada.integer_text_IO, tipos_lab5;
 
+--ESPECIFICACION
+--POST: Devolvera la media de los numeros impares y la media de los numeros pares del vector de enteros. 
+
 
 procedure calcular_media (V_enteros : in t_enteros; media_impar:out float; media_par : out float) is
 
