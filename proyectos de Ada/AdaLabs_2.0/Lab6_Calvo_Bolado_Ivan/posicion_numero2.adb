@@ -1,4 +1,4 @@
-with Tipos_lab6,use Tipos_lab6;
+with Tipos_lab6;use Tipos_lab6;
 
 procedure Posicion_Numero2 (N: T_Valores_Max; Imagen : T_Matriz2;
 I, J: out Natural) is
@@ -8,19 +8,21 @@ I, J: out Natural) is
 -- serán 0 en ambos casos
 
 begin
-I := Imagen'first(1);
-J := Imagen'first(2);
-while I < Imagen'last(1) and then Imagen(I,J) /= N loop
+I := Imagen'first;
+J := Imagen(1)'first;
+
+loop
   J := 0;
-  while J < Imagen(1)'last and then Imagen(I,J) /= N loop
-    J : J + 1;
+  while J < Imagen(I)'last and then Imagen(I)(J) /= N loop
+    J := J + 1;
   end loop;
+  exit when Imagen(I)(J) = N or else I=Imagen'last;
   I := I + 1;
 end loop;
 
-if Imagen(I,J) /= N then
+if Imagen(I)(J) /= N then
   I := 0;
   J := 0;
-end if
+end if;
 
 end Posicion_Numero2;
