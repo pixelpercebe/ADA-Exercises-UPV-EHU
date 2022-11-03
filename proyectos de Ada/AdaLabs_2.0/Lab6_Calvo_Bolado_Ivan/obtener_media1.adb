@@ -4,6 +4,9 @@ use Tipos_Lab6;
 
 function obtener_media1 (Imagen : T_Matriz1) return Float is
 
+-- ESPECIFICACION:
+-- pos: Devuelve la media de los valores de la matriz
+
   media : float := 0.00;
   suma : integer := 0;
   cont : Integer := Imagen'length(1) * Imagen'length(2);
