@@ -10,10 +10,8 @@ I, J: out Natural) is
 
 begin
 I := Imagen'first;
-J := Imagen'first;
-
 loop
-  J := 1;
+  J := Imagen(I)'first;
   while J < Imagen(I)'last and then Imagen(I)(J) /= N loop
     J := J + 1;
   end loop;

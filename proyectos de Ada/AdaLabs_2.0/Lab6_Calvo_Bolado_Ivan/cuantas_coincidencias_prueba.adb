@@ -27,4 +27,4 @@ end Cuantas_Coincidencias_prueba;
 --Casos de prueba
 --caso1 (Ningun elemento el comun) -> no_hay1 y no_hay2 = 0
 --caso2 (Elementos en comun en los extremos de los arrays) -> extremos1 y extremos2 = 4
---caso3 (todos los elemmentos en comun) -> todos1 y todos2 = 
+--caso3 (todos los elemmentos en comun) -> todos1 y todos2 = 15
