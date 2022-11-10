@@ -26,16 +26,56 @@ PACKAGE body Lista_Enteros IS
       New_Line;
    end EscribirSE;
 
+   --Ejercicio 1.a
    procedure Media_Pares_Impares(L: T_Lista_Enteros; P, I: OUT Float) is
-      cont : integer := 0;
+      cont_par, cont_impar : integer := 0;
    BEGIN
-      P := Float'first;
-      I := Float'first;
+      P := 0.0;
+      I := 0.0;
 
-      for i in l.cont loop
-         cont := cont + boolean'pos(l.lista(i) mod 2);
+      for pos in 1..l.cont loop
+         if l.lista(pos) mod 2 = 0 then
+            cont_par := cont_par + 1; 
+            P := P + float(l.lista(pos));
+         else
+            cont_impar := cont_impar + 1; 
+            I := I + float(l.lista(pos));
+         end if;
       end loop;
-   end Media_Pares_Impares;  
+
+      if cont_par = 0 then
+         P := float'first;
+      else if cont_impar = 0 then
+         I := float'first;
+      else
+         P := P / float(cont_par);
+         I := I / float(cont_impar);
+      end if;
+      end if;
+      end Media_Pares_Impares;  
+
+   --Ejercicio 1.b
+   FUNCTION Hay_Multiplo(N: Integer; L: T_Lista_Enteros) RETURN Boolean is
+      i : integer := 1;
+   BEGIN
+      while i <= l.cont and then N /= 0 and then L.lista(i) mod N /= 0 LOOP
+         i := i + 1;
+      END LOOP;
+      return N /= 0 and then l.lista(i) mod N = 0;
+   end Hay_Multiplo;
+
+   --Ejercicio 1.c
+   FUNCTION Esta_Creciente(L: T_Lista_Enteros) RETURN Boolean is
+      i : integer := 1;
+   begin 
+
+    while  i < l.cont and then L.lista(i) < l.lista(i+1)  LOOP
+         i := i + 1;
+      END LOOP;
+   
+      return i+1 = l.cont;
+
+   end Esta_Creciente;
 
 
 

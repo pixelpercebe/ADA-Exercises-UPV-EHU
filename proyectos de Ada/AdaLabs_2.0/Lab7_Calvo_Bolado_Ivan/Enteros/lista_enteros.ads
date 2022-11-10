@@ -25,5 +25,11 @@ PACKAGE Lista_Enteros IS
       -- media de los impares. Si no hay pares devolverá como
       -- media de los pares float'first, y si no hay impares
       -- devolverá como su media float'first.
+   FUNCTION Hay_Multiplo(N: Integer; L: T_Lista_Enteros) RETURN Boolean;
+      -- post: Devuelve true sii L contiene algún múltiplo de N
+
+
+   FUNCTION Esta_Creciente(L: T_Lista_Enteros) RETURN Boolean;
+   -- post: Devuelve true sii L está en orden creciente1.
 
 END Lista_Enteros;
