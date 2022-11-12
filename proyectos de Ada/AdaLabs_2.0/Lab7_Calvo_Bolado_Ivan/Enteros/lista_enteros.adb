@@ -69,7 +69,7 @@ PACKAGE body Lista_Enteros IS
       i : integer := 1;
    begin 
 
-    while  i < l.cont and then L.lista(i) < l.lista(i+1)  LOOP
+    while  i < l.cont and then L.lista(i) <= l.lista(i+1)  LOOP
          i := i + 1;
       END LOOP;
    
