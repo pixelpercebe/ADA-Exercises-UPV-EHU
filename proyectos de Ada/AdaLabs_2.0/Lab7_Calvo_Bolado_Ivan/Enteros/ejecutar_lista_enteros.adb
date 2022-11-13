@@ -10,11 +10,11 @@ BEGIN
 
    --CASOS DE PRUEBA EJERCICIO 1.a
    put_line("-> (EJERCICIO 1.a) Calcular media de pares y media de imapres:");
-   EscribirMedias(pares);--caso1 (solo pares) Media pares:-340282346639000000000000000000000000000.00 Media pares:25.00
+   EscribirMedias(pares);  --caso1 (solo pares) Media pares:-340282346639000000000000000000000000000.00 Media pares:25.00
    EscribirMedias(impares);--caso2 (solo impares) Media pares:30.00 Media pares:-340282346639000000000000000000000000000.00
    impares.cont :=1;
    EscribirMedias(impares);--caso3 (1 elemento) Media pares:2 Media pares:-340282346639000000000000000000000000000.00
-   EscribirMedias(L);--caso4 (varios elementos) Media pares:12.00 Media pares:33.00
+   EscribirMedias(L);      --caso4 (varios elementos) Media pares:12.00 Media pares:33.00
 
    --CASOS DE PRUEBA EJERCICIO 1.b
    put_line("-> (EJERCICIO 1.b) Comprobar multiplo:");
@@ -29,12 +29,12 @@ BEGIN
 
    --CASOS DE PRUEBA EJERCICIO 1.c
    put_line("-> (EJERCICIO 1.c) Comprobar si la secuencia es creciente:");
-   put_line(Esta_Creciente(vacio)'img); --caso1 (vacio) -> False
+   put_line(Esta_Creciente(vacio)'img);      --caso1 (vacio) -> False
    m.cont:=1;
-   put_line(Esta_Creciente(M)'img); --caso2 (1 elemento) -> true
-   put_line(Esta_Creciente(final)'img); --caso3 (decreciente al final) -> false
-   put_line(Esta_Creciente(principio)'img); --caso4 (decreciente al principio) -> false
-   put_line(Esta_Creciente(repetidos)'img); --caso5 (elemetos repetidos) -> true
+   put_line(Esta_Creciente(M)'img);          --caso2 (1 elemento) -> true
+   put_line(Esta_Creciente(final)'img);      --caso3 (decreciente al final) -> false
+   put_line(Esta_Creciente(principio)'img);  --caso4 (decreciente al principio) -> false
+   put_line(Esta_Creciente(repetidos)'img);  --caso5 (elemetos repetidos) -> true
 
    
 
