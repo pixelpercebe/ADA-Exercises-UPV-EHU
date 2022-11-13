@@ -39,7 +39,7 @@ Media_Pares_Impares(L,P,I);
 end EscribirMedias;
 
 
-procedure cargar_Vectores(M,L,pares,impares ,vacio,final,principio,repetidos: in out T_Lista_Enteros) is
+procedure cargar_registros(M,L,pares,impares ,vacio,final,principio,repetidos: in out T_Lista_Enteros) is
 begin
    CargarF("enteros.txt", L);
    M.lista(1..3):=(12,9,0);
@@ -54,7 +54,7 @@ begin
    principio.lista(1..4) := (5,4,6,12);
    principio.cont:=4;
    repetidos.lista(1..4):=(10,12,12,15);
-end cargar_Vectores;
+end cargar_registros;
 
 
 

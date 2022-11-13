@@ -6,7 +6,7 @@ PROCEDURE Ejecutar_Lista_Enteros IS
    
    
 BEGIN
-   cargar_Vectores(M,L,pares,impares,vacio,final, principio,repetidos);
+   cargar_registros(M,L,pares,impares,vacio,final, principio,repetidos);
 
    --CASOS DE PRUEBA EJERCICIO 1.a
    put_line("-> (EJERCICIO 1.a) Calcular media de pares y media de imapres:");

@@ -14,7 +14,7 @@ PACKAGE Lista_Enteros IS
       -- pre: Fichero es el nombre de un fichero que contiene enteros;
       -- post: L contiene los como mucho los 10 primeros enteros del Fichero.
 
-   procedure cargar_Vectores(M,L,pares,impares,vacio,final,principio,repetidos: in out T_Lista_Enteros);
+   procedure cargar_registros(M,L,pares,impares,vacio,final,principio,repetidos: in out T_Lista_Enteros);
       --Post: Carga los elementos necesarios para los casos de prueba con enteros.
 
    PROCEDURE EscribirSE (
