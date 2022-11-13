@@ -2,6 +2,7 @@ WITH Ada.Integer_Text_IO, Ada.Text_IO,Ada.float_Text_IO;
 USE Ada.Integer_Text_IO, Ada.Text_IO,Ada.float_Text_IO;
 
 PACKAGE body Lista_Enteros IS
+
    PROCEDURE CargarF (
          Fichero :        String;
          L       :    OUT T_Lista_Enteros) is
@@ -25,6 +26,40 @@ PACKAGE body Lista_Enteros IS
       END LOOP;
       New_Line;
    end EscribirSE;
+
+
+   procedure EscribirMedias(L: T_Lista_Enteros) is
+P,I: float;
+begin
+Media_Pares_Impares(L,P,I);
+   PUT("Media pares:");PUT(P,0,2,0); 
+   NEW_LINE;
+   PUT("Media pares:");PUT(I,0,2,0);
+   new_line;
+end EscribirMedias;
+
+
+procedure cargar_Vectores(M,L,pares,impares ,vacio,final,principio,repetidos: in out T_Lista_Enteros) is
+begin
+   CargarF("enteros.txt", L);
+   M.lista(1..3):=(12,9,0);
+   pares.lista(1..5):=(1,3,5,7,9);
+   pares.Cont:=5;
+   impares.lista(1..5):=(2,4,6,8,10);
+   impares.Cont:=5;
+   vacio.lista(1..1):=(1=>1);
+   vacio.cont:=0;
+   final.lista(1..6):=(4,8,15,17,24,1);
+   final.Cont:=6;
+   principio.lista(1..4) := (5,4,6,12);
+   principio.cont:=4;
+   repetidos.lista(1..4):=(10,12,12,15);
+end cargar_Vectores;
+
+
+
+
+
 
    --Ejercicio 1.a
    procedure Media_Pares_Impares(L: T_Lista_Enteros; P, I: OUT Float) is
@@ -68,28 +103,10 @@ PACKAGE body Lista_Enteros IS
    FUNCTION Esta_Creciente(L: T_Lista_Enteros) RETURN Boolean is
       i : integer := 1;
    begin 
-
     while  i < l.cont and then L.lista(i) <= l.lista(i+1)  LOOP
          i := i + 1;
       END LOOP;
-   
-      return i+1 = l.cont;
-
+      return i = l.cont;
    end Esta_Creciente;
-
-
-procedure EscribirMedias(L: T_Lista_Enteros) is
-P,I: float; 
-begin
-
-Media_Pares_Impares(L,P,I);
-   PUT("Media pares:");PUT(P,0,2,0); 
-   NEW_LINE;
-   PUT("Media pares:");PUT(I,0,2,0);
-   new_line;
-
-end EscribirMedias;
-
-
 
 END Lista_Enteros;
