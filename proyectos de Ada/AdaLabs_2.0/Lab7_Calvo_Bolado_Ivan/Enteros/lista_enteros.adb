@@ -1,5 +1,5 @@
-WITH Ada.Integer_Text_IO, Ada.Text_IO;
-USE Ada.Integer_Text_IO, Ada.Text_IO;
+WITH Ada.Integer_Text_IO, Ada.Text_IO,Ada.float_Text_IO;
+USE Ada.Integer_Text_IO, Ada.Text_IO,Ada.float_Text_IO;
 
 PACKAGE body Lista_Enteros IS
    PROCEDURE CargarF (
@@ -58,10 +58,10 @@ PACKAGE body Lista_Enteros IS
    FUNCTION Hay_Multiplo(N: Integer; L: T_Lista_Enteros) RETURN Boolean is
       i : integer := 1;
    BEGIN
-      while i <= l.cont and then N /= 0 and then L.lista(i) mod N /= 0 LOOP
+      while i < l.cont and then N /= 0 and then L.lista(i) mod N /= 0 LOOP
          i := i + 1;
       END LOOP;
-      return N /= 0 and then l.lista(i) mod N = 0;
+      return i < l.cont and then N /= 0 and then l.lista(i) mod N = 0;
    end Hay_Multiplo;
 
    --Ejercicio 1.c
@@ -78,6 +78,17 @@ PACKAGE body Lista_Enteros IS
    end Esta_Creciente;
 
 
+procedure EscribirMedias(L: T_Lista_Enteros) is
+P,I: float; 
+begin
+
+Media_Pares_Impares(L,P,I);
+   PUT("Media pares:");PUT(P,0,2,0); 
+   NEW_LINE;
+   PUT("Media pares:");PUT(I,0,2,0);
+   new_line;
+
+end EscribirMedias;
 
 
 

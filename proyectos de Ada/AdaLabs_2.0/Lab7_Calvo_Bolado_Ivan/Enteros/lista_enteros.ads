@@ -20,6 +20,10 @@ PACKAGE Lista_Enteros IS
       -- salida: secuencia de enteros (SE)
       -- post: Secuencia de los enteros de la lista L
 
+   procedure EscribirMedias(L: T_Lista_Enteros);
+      --Post: Escribe por pantala pos separado los resultados 
+      --de calcular las medias de numeros pares e impares 
+
    procedure Media_Pares_Impares(L: T_Lista_Enteros; P, I: OUT Float);
       -- post: P es la media de los elementos pares de L e I la
       -- media de los impares. Si no hay pares devolverá como
@@ -31,5 +35,7 @@ PACKAGE Lista_Enteros IS
 
    FUNCTION Esta_Creciente(L: T_Lista_Enteros) RETURN Boolean;
    -- post: Devuelve true sii L está en orden creciente1.
+
+
 
 END Lista_Enteros;

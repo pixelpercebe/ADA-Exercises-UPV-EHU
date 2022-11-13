@@ -13,6 +13,7 @@ BEGIN
    EscribirSE(N);
 
    --CASOS DE PRUEBA EJERCICIO 2.1
+   put_line("**Ejercicio 2.1**");
    put(Cuantos_Diamantes(L),0);
    NEW_LINE;
    put(Cuantos_Diamantes(M),0);
@@ -22,6 +23,7 @@ BEGIN
 
 
    --CASOS DE PRUEBA EJERCICIO 2.2
+   put_line("**Ejercicio 2.2**");
    extrae(L,res);
    put(res,0);
    NEW_LINE;
