@@ -13,8 +13,9 @@ PACKAGE Lista_Enteros IS
       -- entrada: Secuencia de enteros S (en Fichero)
       -- pre: Fichero es el nombre de un fichero que contiene enteros;
       -- post: L contiene los como mucho los 10 primeros enteros del Fichero.
-   procedure cargar_Vectores(M,L,pares,impares,vacio,final,principio,repetidos: in out T_Lista_Enteros);
 
+   procedure cargar_Vectores(M,L,pares,impares,vacio,final,principio,repetidos: in out T_Lista_Enteros);
+      --Post: Carga los elementos necesarios para los casos de prueba con enteros.
 
    PROCEDURE EscribirSE (
          L : T_Lista_Enteros);
@@ -22,8 +23,7 @@ PACKAGE Lista_Enteros IS
       -- post: Secuencia de los enteros de la lista L
 
    procedure EscribirMedias(L: T_Lista_Enteros);
-      --Post: Escribe por pantala pos separado los resultados 
-      --de calcular las medias de numeros pares e impares 
+      --Post: Escribe por pantala pos separado los resultados de calcular las medias de numeros pares e impares 
 
    procedure Media_Pares_Impares(L: T_Lista_Enteros; P, I: OUT Float);
       -- post: P es la media de los elementos pares de L e I la
