@@ -7,7 +7,7 @@ type t_lista is record
   cont: natural range 0..maxNum;
 end record;
 
-procedure cargar_registros(L: in out t_lista);
+procedure cargar_registros(L,ordenada,solo: in out t_lista);
 --Post: carga los registros necesarios para los casos de prueba.
 
 
@@ -19,4 +19,11 @@ Procedure Elimina_I (L: in out t_lista; I:integer);
 --Post: Se devolvera la lista de L sin el elemento de la posicion I, 
 --con los elementos segun estaban.
 
+PROCEDURE EscribirSE (L: T_Lista);
+  -- salida: secuencia de enteros (SE)
+  -- post: Secuencia de los enteros de la lista L
+
+  procedure Insertar_Orden(L: in out t_lista; N:integer);
+  --Pre: La lista estara ordenada crecientemente y no estara llena (L.cont < Maxnum)
+  --Post: insertara ordenadamente el entero N en la lista.
 end lista_numeros;
