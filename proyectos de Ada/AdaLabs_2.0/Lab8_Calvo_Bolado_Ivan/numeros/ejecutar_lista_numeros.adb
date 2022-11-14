@@ -13,6 +13,7 @@ EscribirSE(L);
 Elimina_I(L,3);
 EscribirSE(L);
 New_Line;
+
 EscribirSE(ordenada);
 Insertar_Orden(ordenada,11);
 EscribirSE(ordenada);
@@ -20,10 +21,24 @@ EscribirSE(solo);
 Insertar_Orden(solo,1);
 EscribirSE(solo);
 New_Line;
+
+cargar_registros(L,ordenada,solo);
 EscribirSE(L);
 put_line(pos_min(L,4)'img);
 EscribirSE(solo);
 put_line(pos_min(solo,1)'img);
+new_line;
+EscribirSE(L);
+put_line(pos_min(L,3)'img);
+new_line;
+
+EscribirSE(L);
+ordenar(L);
+EscribirSE(L);
+EscribirSE(solo);
+ordenar(solo);
+EscribirSE(solo);
+
 
 
 end ejecutar_lista_numeros;
