@@ -19,6 +19,11 @@ EscribirSE(ordenada);
 EscribirSE(solo);
 Insertar_Orden(solo,1);
 EscribirSE(solo);
+New_Line;
+EscribirSE(L);
+put_line(pos_min(L,4)'img);
+EscribirSE(solo);
+put_line(pos_min(solo,1)'img);
 
 
 end ejecutar_lista_numeros;

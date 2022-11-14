@@ -11,7 +11,7 @@ begin
   ordenada.numeros(1..5) := (1,5,7,10,16);
   ordenada.cont:=5;
   solo.numeros(1..1) := (1=>8);
-  l.cont:=l.cont+1;
+  solo.cont:=1;
 END cargar_registros;
 
 PROCEDURE EscribirSE (
@@ -61,6 +61,21 @@ BEGIN
 
 end Insertar_Orden;
 
+
+
+function pos_min(L: t_lista; I: integer) return integer is
+
+pos_min: integer:= I;
+
+begin
+
+for act in I+1..l.cont loop
+    if l.numeros(act) < l.numeros(pos_MIN) then
+      pos_min:= act;
+    end if;
+  end loop;
+  return pos_MIN;
+end pos_min;
 
 
 end lista_numeros;

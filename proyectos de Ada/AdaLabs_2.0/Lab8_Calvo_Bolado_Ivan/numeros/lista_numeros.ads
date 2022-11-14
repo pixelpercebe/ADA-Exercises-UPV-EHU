@@ -26,4 +26,9 @@ PROCEDURE EscribirSE (L: T_Lista);
   procedure Insertar_Orden(L: in out t_lista; N:integer);
   --Pre: La lista estara ordenada crecientemente y no estara llena (L.cont < Maxnum)
   --Post: insertara ordenadamente el entero N en la lista.
+
+
+  function pos_min(L: t_lista; I: integer) return integer;
+  --Pre:  posición I 1<=I<= longitud(L)
+  --Post: Devolvera el mvalor de la posicion del menos numero del vetor.
 end lista_numeros;
