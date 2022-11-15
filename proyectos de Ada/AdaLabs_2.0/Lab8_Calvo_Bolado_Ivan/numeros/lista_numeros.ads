@@ -7,7 +7,7 @@ type t_lista is record
   cont: natural range 0..maxNum;
 end record;
 
-procedure cargar_registros(L,ordenada,solo: in out t_lista);
+procedure cargar_registros(L,ordenada,solo, repe: in out t_lista);
 --Post: carga los registros necesarios para los casos de prueba.
 
 function esta (L:t_lista; N:integer) return boolean;

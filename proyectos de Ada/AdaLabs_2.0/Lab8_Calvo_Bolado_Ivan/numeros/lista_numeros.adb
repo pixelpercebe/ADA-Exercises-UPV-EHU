@@ -3,7 +3,7 @@ USE Ada.Integer_Text_IO, Ada.Text_IO,Ada.float_Text_IO;
 
 Package body Lista_numeros is 
 
-Procedure cargar_registros (L,ordenada,solo: IN OUT T_Lista) IS
+Procedure cargar_registros (L,ordenada,solo, repe: IN OUT T_Lista) IS
 begin
   L.numeros(1..6) := (24,16,2,13,5,17);
   L.cont:=6;
@@ -11,6 +11,8 @@ begin
   ordenada.cont:=5;
   solo.numeros(1..1) := (1=>8);
   solo.cont:=1;
+  repe.numeros(1..8):=(9,others=>9);
+  repe.cont:=8;
 END cargar_registros;
 
 PROCEDURE EscribirSE (L : T_Lista) IS
