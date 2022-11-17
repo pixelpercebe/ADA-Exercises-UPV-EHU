@@ -1,3 +1,9 @@
+  with ada.Text_IO,lista_numeros;use lista_numeros,ada.Text_IO;
+  
+  procedure Ordenar_prueba is
+  L,ordenada,solo,repe: T_Lista;
+  begin
+  cargar_registros(L,ordenada,solo,repe);
   --casos de prueba de Ordenar()
   EscribirSE(L);        --(24 16 2 13 5 17)
   ordenar(L);           --caso1(Ordenar varios elementos)
@@ -11,3 +17,6 @@
   EscribirSE(ordenada); --(1 5 7 10 16)
   ordenar(ordenada);    --caso4(ordenar lista ya ordenada)
   EscribirSE(ordenada); --(1 5 7 10 16)
+
+
+  end Ordenar_prueba;

@@ -1,6 +1,6 @@
 with ada.Text_IO,lista_numeros;use lista_numeros,ada.Text_IO;
 
-procedure Eliminar_I_pruebas is
+procedure Eliminar_I_prueba is
 
 L,ordenada,solo,repe: T_Lista;
 
@@ -24,4 +24,4 @@ begin
   Elimina_I(L,3); --caso4 (eliminar en el centro)
   EscribirSE(L);  --(24 16 13 5 17)
 
-  end Eliminar_I_pruebas;
+  end Eliminar_I_prueba;
