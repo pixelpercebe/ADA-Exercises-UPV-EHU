@@ -30,6 +30,11 @@ begin
   ejecutar_pruebas(L,"Cardiopatia",11,0);
   new_line;
 
+  --Cardiorrespiratorios (20 posiciones)
+    put_line("****caso6****");
+  ejecutar_pruebas(L,"Cardiorrespiratorios",20,20);
+  new_line;
+
 
 
 
