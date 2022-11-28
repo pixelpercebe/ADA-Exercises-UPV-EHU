@@ -35,4 +35,15 @@ PACKAGE BODY Persona IS
       New_Line;
    END Escribir_Persona;
 
+   
+   function es_mayor_edad (P:t_persona) return boolean IS
+   BEGIN
+      return P.Edad >= 18;
+   end es_mayor_edad;
+
+   function mismo_nombre (P: t_persona; Nom: T_Nombre) return boolean IS
+   begin
+      return P.NombreApellidos = nom;
+   end mismo_nombre;
+
 END Persona;

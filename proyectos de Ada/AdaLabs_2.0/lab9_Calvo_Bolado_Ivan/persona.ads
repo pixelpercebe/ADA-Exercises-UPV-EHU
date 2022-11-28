@@ -37,6 +37,13 @@ PACKAGE Persona IS
    PROCEDURE Escribir_Persona (
          P : T_Persona);
    -- salida: una Persona (SE)
-   -- pos: Escribe la información de una persona en una línea.
+   -- pos: Escribe la informaciï¿½n de una persona en una lï¿½nea.
+
+   function es_mayor_edad (P:t_persona) return boolean;
+   --Post: Devolvera un valor booleano indicando si la edad de la persona es >= 18.
+
+   function mismo_nombre (P: t_persona; Nom: T_Nombre) return boolean;
+   --post: Devolvera un booleano que indica si P y nom coinciden.
+
 
 END Persona;
