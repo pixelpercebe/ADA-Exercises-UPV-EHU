@@ -24,4 +24,21 @@ PACKAGE BODY Vector_Personas IS
       END LOOP;
    END Escribir_Personas;
 
+
+   function Pos_Persona(V: in T_Vector_Personas; P: T_Nombre) return Natural IS
+
+   sup: integer := V'last;
+   inf: integer := V'first;
+   med:integer;
+
+   BEGIN
+   med := sup/2
+
+   while med /=0 and then V(med).nombreApellidos /= P and then sup /= inf
+
+      
+
+   end loop;
+
+   end pos_persona;
 END Vector_Personas;
