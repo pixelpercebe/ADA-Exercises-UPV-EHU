@@ -32,13 +32,39 @@ PACKAGE BODY Vector_Personas IS
    med:integer;
 
    BEGIN
-   med := sup/2
+   med := (sup+inf)/2;
 
-   while med /=0 and then V(med).nombreApellidos /= P and then sup /= inf
+   while med /=0 and then V(med).nombreApellidos /= P and then sup /= inf loop
 
-      
+      med := (sup+inf) / 2;
 
+      if V(med).nombreApellidos < P then
+         sup := med-1;
+      else if V(med).nombreApellidos > P then
+         inf := med + 1;
+      end if;
+      end if;
    end loop;
 
+   return med;
    end pos_persona;
+
+
+   procedure Actualiza_Domicilio(V: in out T_Vector_Personas; Nom: T_Nombre;
+   C: T_ciudad) IS
+
+      pos: integer;
+
+   BEGIN
+      pos := pos_persona(V,nom);
+      
+      if V(pos).nombreApellidos = nom then
+         V(pos).Domicilio := C;
+      else
+         V(pos+1..V'last) := V(pos..V'last-1);
+         V(pos).Domicilio := C;
+      end if;
+   end Actualiza_Domicilio;
+
+
 END Vector_Personas;
