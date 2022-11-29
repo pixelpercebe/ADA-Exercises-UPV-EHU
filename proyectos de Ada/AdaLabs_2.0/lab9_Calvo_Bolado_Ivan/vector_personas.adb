@@ -51,12 +51,12 @@ PACKAGE BODY Vector_Personas IS
 
    --loop
    --med := (sup+inf) / 2;
-   --exit when inf > ult or else V(med) = num
-   --if inf > ult  then false
-   --if V(med) = num then true
+   --exit when inf > sup or else V(med) = num
+   --if inf > sup or else V(med) /= num  then false
+   --if V(med) = num or else sup > inf then true
 
 
-   
+
    procedure Actualiza_Domicilio(V: in out T_Vector_Personas; Nom: T_Nombre;
    C: T_ciudad) IS
 
