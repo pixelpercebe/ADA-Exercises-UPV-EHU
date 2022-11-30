@@ -39,14 +39,20 @@ PACKAGE BODY Vector_Personas IS
 
          exit when inf > sup or else V(med).nombreApellidos = P;
 
-         if V(med).nombreApellidos.nombre < P.nombre and V(med).nombreApellidos.apellido1 < P.apellido1 and V(med).nombreApellidos.apellido2 < P.apellido2  then
+         if (P.apellido1 < V(med).nombreApellidos.apellido1) or (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 < V(med).nombreApellidos.apellido2) or 
+         (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 < V(med).nombreApellidos.apellido2 and P.nombre < V(med).nombreApellidos.nombre) then
             sup := med-1;
-            else if V(med).nombreApellidos.nombre > P.nombre and V(med).nombreApellidos.apellido1 > P.apellido1 and V(med).nombreApellidos.apellido2 > P.apellido2 then
+
+            else if (P.apellido1 > V(med).nombreApellidos.apellido1) or (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 > V(med).nombreApellidos.apellido2) or 
+            (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 > V(med).nombreApellidos.apellido2 and P.nombre > V(med).nombreApellidos.nombre) then
                inf := med + 1;
             end if;
          end if;
+
       end loop;
-      put(med);
+      if inf > sup then
+         med := med+1;
+      end if;
       return med;
    end pos_persona;
 
@@ -61,14 +67,11 @@ PACKAGE BODY Vector_Personas IS
    procedure Actualiza_Domicilio(V: in out T_Vector_Personas; Nom: T_Nombre;
    C: T_ciudad) IS
 
-      pos: integer;
+      pos: Natural;
 
    BEGIN
       pos := pos_persona(V,nom);
-      if V(pos).nombreApellidos = nom then
-         V(pos).Domicilio := C;
-      else
-         V(pos+1..V'last) := V(pos..V'last-1);
+      if (pos <= v'last and pos >= v'first) and then (V(pos).nombreApellidos = nom) then
          V(pos).Domicilio := C;
       end if;
    end Actualiza_Domicilio;

@@ -13,7 +13,7 @@ PACKAGE BODY Mapa_Ciudades IS
          New_Line;
          FOR J IN M'RANGE(2) LOOP
             Put("(");
-            Put(I'img, 0);
+            Put(I'img);
             Put(", ");
             Put(J, 0);
             Put(") ");

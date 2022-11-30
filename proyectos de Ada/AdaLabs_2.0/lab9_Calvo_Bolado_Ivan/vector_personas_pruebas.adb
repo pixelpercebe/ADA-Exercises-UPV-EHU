@@ -65,7 +65,7 @@ BEGIN
    Put_Line(" personas");
    New_Line;
 
-   Put("Caso 1: Vector vacio. La posicion en la que deber�a estar cualquier persona es la 1, y obtiene ==> ");
+   Put("Caso 1: Vector vacio. La posicion en la que debera estar cualquier persona es la 1, y obtiene ==> ");
    Put(Pos_Persona(V1, N1), 0);
    New_Line;
 
