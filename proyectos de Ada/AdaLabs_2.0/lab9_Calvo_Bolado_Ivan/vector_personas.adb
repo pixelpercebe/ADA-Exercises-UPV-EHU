@@ -24,7 +24,7 @@ PACKAGE BODY Vector_Personas IS
       END LOOP;
    END Escribir_Personas;
 
-
+   
    function Pos_Persona(V: in T_Vector_Personas; P: T_Nombre) return Natural IS
 
    sup: integer := V'last;
@@ -32,21 +32,22 @@ PACKAGE BODY Vector_Personas IS
    med:integer;
 
    BEGIN
-   med := (sup+inf)/2;
 
-   while med /=0 and then V(med).nombreApellidos /= P and then sup /= inf loop
+      loop
 
-      med := (sup+inf) / 2;
+         med := (sup+inf) / 2;
 
-      if V(med).nombreApellidos < P then
-         sup := med-1;
-      else if V(med).nombreApellidos > P then
-         inf := med + 1;
-      end if;
-      end if;
-   end loop;
+         exit when inf > sup or else V(med).nombreApellidos = P;
 
-   return med;
+         if V(med).nombreApellidos.nombre < P.nombre and V(med).nombreApellidos.apellido1 < P.apellido1 and V(med).nombreApellidos.apellido2 < P.apellido2  then
+            sup := med-1;
+            else if V(med).nombreApellidos.nombre > P.nombre and V(med).nombreApellidos.apellido1 > P.apellido1 and V(med).nombreApellidos.apellido2 > P.apellido2 then
+               inf := med + 1;
+            end if;
+         end if;
+      end loop;
+      put(med);
+      return med;
    end pos_persona;
 
    --loop
@@ -64,7 +65,6 @@ PACKAGE BODY Vector_Personas IS
 
    BEGIN
       pos := pos_persona(V,nom);
-      
       if V(pos).nombreApellidos = nom then
          V(pos).Domicilio := C;
       else

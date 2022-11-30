@@ -29,7 +29,7 @@ BEGIN
    N2.Apellido2(1..9):= "Rodriguez";
 
 
-   N3.Nombre:= (OTHERS=> ' '); -- Última persona del fichero "personas6.txt"
+   N3.Nombre:= (OTHERS=> ' '); -- ï¿½ltima persona del fichero "personas6.txt"
    N3.Apellido1:= (OTHERS=> ' ');
    N3.Apellido2:= (OTHERS=> ' ');
    N3.Nombre(1..3):= "Ana";
@@ -65,7 +65,7 @@ BEGIN
    Put_Line(" personas");
    New_Line;
 
-   Put("Caso 1: Vector vacio. La posicion en la que debería estar cualquier persona es la 1, y obtiene ==> ");
+   Put("Caso 1: Vector vacio. La posicion en la que deberï¿½a estar cualquier persona es la 1, y obtiene ==> ");
    Put(Pos_Persona(V1, N1), 0);
    New_Line;
 

@@ -7,14 +7,14 @@ PROCEDURE Cargar_Escribir_Lista_Personas_Prueba IS
    L: T_Lista_Personas;
 
 BEGIN
-   put_line("Cargar fichero vacio"); Cargar_Personas("personas0.txt", L); -- Vacío
+   put_line("Cargar fichero vacio"); Cargar_Personas("personas0.txt", L); -- Vacï¿½o
    Put_Line("La lista de personas esta formada por:");
    Escribir_Personas(L);
    Put(L.Cont, 0);
    Put_Line(" personas");
 
    New_Line;
-   put_line("Cargar fichero con una persona"); Cargar_Personas("personas1.txt", L); -- Sólo 1
+   put_line("Cargar fichero con una persona"); Cargar_Personas("personas1.txt", L); -- Sï¿½lo 1
    Put_Line("La lista de personas esta formada por:");
    Escribir_Personas(L);
    Put(L.Cont, 0);
