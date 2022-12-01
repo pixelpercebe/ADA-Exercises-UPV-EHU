@@ -40,11 +40,11 @@ PACKAGE BODY Vector_Personas IS
          exit when inf > sup or else V(med).nombreApellidos = P;
 
          if (P.apellido1 < V(med).nombreApellidos.apellido1) or (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 < V(med).nombreApellidos.apellido2) or 
-         (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 < V(med).nombreApellidos.apellido2 and P.nombre < V(med).nombreApellidos.nombre) then
+         (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 = V(med).nombreApellidos.apellido2 and P.nombre < V(med).nombreApellidos.nombre) then
             sup := med-1;
 
             else if (P.apellido1 > V(med).nombreApellidos.apellido1) or (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 > V(med).nombreApellidos.apellido2) or 
-            (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 > V(med).nombreApellidos.apellido2 and P.nombre > V(med).nombreApellidos.nombre) then
+            (P.apellido1 = V(med).nombreApellidos.apellido1 and P.apellido2 = V(med).nombreApellidos.apellido2 and P.nombre > V(med).nombreApellidos.nombre) then
                inf := med + 1;
             end if;
          end if;

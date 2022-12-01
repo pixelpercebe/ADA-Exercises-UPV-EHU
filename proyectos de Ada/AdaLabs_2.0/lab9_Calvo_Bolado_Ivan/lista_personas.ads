@@ -20,4 +20,16 @@ PACKAGE Lista_Personas IS
    -- salida Secuencia de Personas S (SE)
    -- pos: S est� formada por las personas de L.
 
+
+   Procedure Inserta_Persona(L: in out T_Lista_Personas; P: T_Persona);
+   -- pre: L ordenado alfabéticamente por apellidos y nombre. L no llena.
+   -- post: Se inserta ordenadamente P en L. Si la misma persona P ya está en
+   -- L, no se actualiza L.
+
+   --procedure Filtra_Edad(V: T_Vector_Personas; LMay, LMen: out T_Lista_Personas);
+   -- pre: La longitud de V es menor o igual que la capacidad del tipo lista.
+   -- V ordenado alfabéticamente por apellidos y nombre.
+   -- post: LMay contiene las personas mayores de edad de V. LMen contiene las
+   -- personas menores de edad de V. Las listas quedan también ordenadas.
+
 END Lista_Personas;
