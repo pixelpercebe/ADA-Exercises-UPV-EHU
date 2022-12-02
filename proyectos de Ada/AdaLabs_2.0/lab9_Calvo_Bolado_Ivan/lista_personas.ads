@@ -26,7 +26,7 @@ PACKAGE Lista_Personas IS
    -- post: Se inserta ordenadamente P en L. Si la misma persona P ya está en
    -- L, no se actualiza L.
 
-   --procedure Filtra_Edad(V: T_Vector_Personas; LMay, LMen: out T_Lista_Personas);
+   procedure Filtra_Edad(V: T_Vector_Personas; LMay, LMen: out T_Lista_Personas);
    -- pre: La longitud de V es menor o igual que la capacidad del tipo lista.
    -- V ordenado alfabéticamente por apellidos y nombre.
    -- post: LMay contiene las personas mayores de edad de V. LMen contiene las
