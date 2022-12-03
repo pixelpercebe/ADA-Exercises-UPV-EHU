@@ -22,4 +22,27 @@ PACKAGE BODY Mapa_Ciudades IS
       END LOOP;
    END Escribir_Mapa;
 
+   procedure Obten_Mapa_Ciudades(L: in T_Lista_Personas; MC: out T_Mapa_Ciudades) IS
+   --MC -> primera columna = mayores de edad, segunda columna = Menores de edad.
+
+      LMay, LMen: T_Lista_Personas;
+      
+
+   begin
+
+      Filtra_Edad(L.lista,LMay,LMen);
+      
+      for i in LMay.lista'first..LMay.cont loop
+      --while L.cont > 0 and then i <= LMay.cont loop
+         Inserta_Persona(MC(LMay.lista(i).Domicilio,1),LMay.lista(i));
+         
+      end loop;
+
+      for i in LMen.lista'first..LMen.cont loop
+      --while L.cont > 0 and then i <= LMay.cont loop
+         Inserta_Persona(MC(LMen.lista(i).Domicilio,2),LMen.lista(i));
+      
+      end loop;
+
+   end Obten_Mapa_Ciudades;
 END Mapa_Ciudades;

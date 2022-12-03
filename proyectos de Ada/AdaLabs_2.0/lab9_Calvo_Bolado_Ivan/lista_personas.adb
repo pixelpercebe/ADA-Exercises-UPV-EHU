@@ -33,15 +33,13 @@ PACKAGE BODY Lista_Personas IS
       pos: integer;
 
    BEGIN
-
+      L.cont := L.cont + 1;
       pos := pos_persona(L.lista(1..L.cont),P.nombreApellidos);
-      put(pos'img);
+      
       if (pos <= L.cont and pos >= L.lista'first) and then (L.lista(pos) /= P) then
          L.lista(pos+1..L.Cont+1) := L.lista(pos..l.cont);
          L.lista(pos) := P;
-         L.cont := L.cont + 1;
       else if (pos > L.cont) then
-         L.cont := L.cont + 1;
          L.lista(pos) := P;
       end if;
       end if;
@@ -55,7 +53,8 @@ PACKAGE BODY Lista_Personas IS
    LMay.cont := 0;
    LMen.cont := 0;
    for i in V'range loop
-      if V(i).edad < 18 then
+      put("hola");
+      if V(i).edad >= 18 then
          LMay.cont := LMay.cont + 1;
          Inserta_Persona(LMay,V(i));
       else
@@ -65,6 +64,4 @@ PACKAGE BODY Lista_Personas IS
 
    end loop;
    end filtra_edad;
-
-
 END Lista_Personas;
