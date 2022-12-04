@@ -5,8 +5,6 @@ USE Vector_Personas;
 
 PROCEDURE Cargar_Escribir_Vector_Personas_Prueba IS
    P1     : T_Vector_Personas (1 .. 0);
-   P2     : T_Vector_Personas (1 .. 1);
-   P3     : T_Vector_Personas (5 .. 10);
 
 BEGIN
    put_line("Cargar fichero vacio"); Cargar_Personas("personas0.txt", P1);
