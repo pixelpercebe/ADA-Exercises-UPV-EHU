@@ -7,6 +7,7 @@ PROCEDURE Cargar_Escribir_Lista_Personas_Prueba IS
    L: T_Lista_Personas;
 
 BEGIN
+
    put_line("Cargar fichero vacio"); Cargar_Personas("personas0.txt", L); -- Vac�o
    Put_Line("La lista de personas esta formada por:");
    Escribir_Personas(L);
@@ -20,7 +21,7 @@ BEGIN
    Put(L.Cont, 0);
    Put_Line(" persona");
 
-   New_Line;
+      New_Line;
    put_line("Cargar fichero con 6 personas"); Cargar_Personas("personas6.txt", L); -- A medias
    Put_Line("La lista de personas esta formada por:");
    Escribir_Personas(l);
