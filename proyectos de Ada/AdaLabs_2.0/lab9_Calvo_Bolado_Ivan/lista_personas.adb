@@ -29,36 +29,29 @@ PACKAGE BODY Lista_Personas IS
 
 
    Procedure Inserta_Persona(L: in out T_Lista_Personas; P: T_Persona) IS
-
       pos: integer;
-
    BEGIN
-      L.cont := L.cont + 1;
       pos := pos_persona(L.lista(1..L.cont),P.nombreApellidos);
-      
       if (pos <= L.cont and pos >= L.lista'first) and then (L.lista(pos) /= P) then
          L.lista(pos+1..L.Cont+1) := L.lista(pos..l.cont);
          L.lista(pos) := P;
+         L.cont := L.cont + 1;
       else if (pos > L.cont) then
          L.lista(pos) := P;
+         L.cont := L.cont + 1;
       end if;
       end if;
    END Inserta_Persona;
 
 
    procedure Filtra_Edad(V: T_Vector_Personas; LMay, LMen: out T_Lista_Personas) is
-
-
    BEGIN
    LMay.cont := 0;
    LMen.cont := 0;
-   for i in V'range loop
-      put("hola");
-      if V(i).edad >= 18 then
-         LMay.cont := LMay.cont + 1;
+   for i in v'range loop
+      if es_mayor_edad(V(i)) then
          Inserta_Persona(LMay,V(i));
       else
-         LMen.cont := LMen.cont + 1;
          Inserta_Persona(LMen,V(i));
       end if;
 

@@ -19,7 +19,7 @@ PACKAGE BODY Vector_Personas IS
    BEGIN
       FOR I IN V'RANGE LOOP
          Put(I, 3);
-         Put_Line(": ");
+         Put(": ");
          Escribir_Persona(V(I)); -- llamada al package Persona
       END LOOP;
    END Escribir_Personas;

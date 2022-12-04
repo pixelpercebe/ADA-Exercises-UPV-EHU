@@ -7,13 +7,13 @@ procedure Mapa_Ciudades_prueba is
   MC : T_Mapa_Ciudades;
 
 BEGIN
-
-  --put_line("Cargar fichero vacio"); Cargar_Personas("personas0.txt", L); -- Vac�o
-  --put("1.) Se han cargado: ");
-  --Put(L.Cont, 0);
-  --put(" personas.");
-  --Obten_Mapa_Ciudades(L,MC);
-  --Escribir_Mapa(MC);
+  put_line("Cargar fichero vacio"); Cargar_Personas("personas0.txt", L); -- Vac�o
+  put("1.) Se han cargado: ");
+  Put(L.Cont, 0);
+  put(" personas.");
+  Obten_Mapa_Ciudades(L,MC);
+  Escribir_Mapa(MC);
+  put_line("MAPA CARGADO!");
 
   New_Line;
   put_line("Cargar fichero con una persona"); Cargar_Personas("personas1.txt", L); -- S�lo 1
@@ -22,7 +22,8 @@ BEGIN
   put(" personas.");
   Obten_Mapa_Ciudades(L,MC);
   Escribir_Mapa(MC);
-
+  put_line("MAPA CARGADO!");
+  
   New_Line;
   put_line("Cargar fichero con 6 personas"); Cargar_Personas("personas6.txt", L); -- A medias
   put("3.) Se han cargado: ");

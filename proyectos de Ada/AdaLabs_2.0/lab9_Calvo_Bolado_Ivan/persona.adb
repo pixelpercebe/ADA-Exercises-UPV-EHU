@@ -24,14 +24,11 @@ PACKAGE BODY Persona IS
    END Cargar_Persona;
 
 
-   PROCEDURE Escribir_Persona (
-         P : T_Persona) IS
+   PROCEDURE Escribir_Persona (P : T_Persona) IS
    BEGIN
-      Put("     "); Put_line(P.NombreApellidos.Nombre);
-      put("     "); Put_line(P.NombreApellidos.Apellido1);
-      put("     "); Put_line(P.NombreApellidos.Apellido2);
-      put("     "); Put(P.Domicilio'img); New_line;
-      put("     "); Put(P.Edad, 0);
+      Put("     "); Put(P.NombreApellidos.Nombre); Put(P.NombreApellidos.Apellido1); Put(P.NombreApellidos.Apellido2);
+      Put("     "); Put(P.Domicilio'Img);
+      Put("     "); Put(P.Edad, 0);
       New_Line;
    END Escribir_Persona;
 
