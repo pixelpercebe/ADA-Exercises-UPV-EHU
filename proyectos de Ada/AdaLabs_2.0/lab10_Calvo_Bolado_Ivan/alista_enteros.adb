@@ -98,7 +98,7 @@ PACKAGE body ALista_Enteros IS
       end Insertar_al_principio;
 
 
-      procedure Insertar_al_final (L: in out A_lista; N: Integer) is
+      procedure Insertar_al_final (L: in out A_lista; N: Integer) is --MEJOR CON DOS APUNTADORES ANT Y ACT
       act: A_lista := L;
       aux: A_Lista ;
       begin
@@ -111,6 +111,14 @@ PACKAGE body ALista_Enteros IS
          else
          act.sig := aux;
          end if;
+
+         --While act /= null loop
+            --ant:=act
+            --act:=act.sig
+         --end loop
+         --if ant = act then L:= new t_entero'(N,nnull)
+         --else ant.sig := new t_eentero(N,null)
+         --end if;
       end Insertar_al_final;
 
       procedure Insertar_ordenado (L: in out A_Lista; N: integer) is
