@@ -31,10 +31,12 @@ PACKAGE BODY Mapa_Ciudades IS
       LMay, LMen: T_Lista_Personas;
    begin
       --Podria ser un subprogrma aparte
-      for i in T_Ciudad loop
-      MC(i,1).cont := 0;
-      MC(i,2).cont := 0;
+      for i in T_Ciudad loop     --'RANGE
+      MC(i,1).cont := 0;         --filtr_ciudad(LMay,c,MC(C,1))
+      MC(i,2).cont := 0;         --Filtr_ciudad(LMEN,c,MC(C,2))
       end loop;
+      --esto sobra si utilizamos filtrr_ciudad
+
 
       Filtra_Edad(L.lista(1..l.cont),LMay,LMen);
       for i in 1..LMay.cont loop

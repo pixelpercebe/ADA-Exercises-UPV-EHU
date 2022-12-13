@@ -63,10 +63,11 @@ PACKAGE BODY Lista_Personas IS
       i : integer := 1;
 
       BEGIN
-         L.cont:= 0;
+         LC.cont:= 0;
          while i <= l.cont loop
-            if L.lista := LC.cont + 1;
-               LC.lista(LC.cont):= L.list(i);
+            if L.lista(i).domicilio = C then
+               LC.cont := LC.cont + 1;
+               LC.lista(LC.cont):= L.Lista(i);
                L.lista(i..L.cont-1):=L.lista(i+1..L.cont);
                L.cont := L.cont-1;
             else i := i+1;
