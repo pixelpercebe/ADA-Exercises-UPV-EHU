@@ -32,4 +32,11 @@ PACKAGE Lista_Personas IS
    -- post: LMay contiene las personas mayores de edad de V. LMen contiene las
    -- personas menores de edad de V. Las listas quedan también ordenadas.
 
+   procedure Filtra_Ciudad(L: in out T_Lista_Personas; C: t_ciudad; LC: out T_Lista_Personas);
+   -- pre: L ordenada alfabéticamente por apellidos y nombre.
+   -- post: LC contiene las personas de L domiciliadas en la ciudad C.
+   -- L se actualiza y ya no tiene ninguna persona de esa ciudad.
+   -- LC también está ordenada.
+
+
 END Lista_Personas;

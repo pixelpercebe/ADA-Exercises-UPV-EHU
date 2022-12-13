@@ -57,4 +57,21 @@ PACKAGE BODY Lista_Personas IS
 
    end loop;
    end filtra_edad;
+
+      procedure Filtra_Ciudad(L: in out T_Lista_Personas; C: t_ciudad; LC: out T_Lista_Personas) is
+
+      i : integer := 1;
+
+      BEGIN
+         L.cont:= 0;
+         while i <= l.cont loop
+            if L.lista := LC.cont + 1;
+               LC.lista(LC.cont):= L.list(i);
+               L.lista(i..L.cont-1):=L.lista(i+1..L.cont);
+               L.cont := L.cont-1;
+            else i := i+1;
+            end if;
+         end loop;
+
+      end Filtra_Ciudad;
 END Lista_Personas;
