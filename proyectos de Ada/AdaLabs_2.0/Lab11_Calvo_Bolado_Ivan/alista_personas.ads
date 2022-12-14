@@ -14,13 +14,23 @@ PACKAGE ALista_Personas IS
          S :        String;
          L :    OUT A_Personas);
    -- entrada: Secuencia de Personas P(Fichero S)
-   -- pre: Cada valor correspondiente a cada persona está en una línea. S es nombre de fichero que
+   -- pre: Cada valor correspondiente a cada persona estï¿½ en una lï¿½nea. S es nombre de fichero que
    --   como mucho hay tantas personas como la capacidad de de L.
-   -- post: devuelve una lista con las personas de P que están en S.
+   -- post: devuelve una lista con las personas de P que estï¿½n en S.
 
 
    PROCEDURE Escribir_Personas (
          L : A_Personas);
    -- salida Secuencia de Personas S (SE)
-   -- pos: S está formada por las personas de L.
+   -- pos: S estï¿½ formada por las personas de L.
+
+   procedure Pos_Persona(L: in A_Personas; P: T_Nombre; Ant, Act: out A_Personas);
+   -- pre: L ordenado alfabÃ©ticamente por apellidos y nombre.
+   -- post: devuelve los apuntadores Ant y Act para insertar/localicar a P.
+   -- Ant apunta al elemento justo anterior de donde debiera estar esa
+   -- persona P en L, Act apunta a la misma persona P, o si Ant=Act
+   -- significa que se debe insertar como primero en L.
+
+   function comparar(P1,P2:T_Nombre) return integer;
+
 END ALista_Personas;

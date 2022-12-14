@@ -40,4 +40,40 @@ PACKAGE BODY ALista_Personas IS
       END IF;
    END Escribir_Personas;
 
+   procedure Pos_Persona(L: in A_Personas; P: T_Nombre; Ant, Act: out A_Personas) IS
+   BEGIN
+      Act := L;
+      Ant := L;
+      while act /= NULL and then comparar(act.persona.NombreApellidos, ant.persona.NombreApellidos) < 0 loop
+         act := act.sig;
+         ant := ant.sig;
+      end loop;
+   end Pos_Persona;
+
+
+   function comparar(P1,P2:T_Nombre) return integer is
+
+      res: integer;
+      max_char: integer := 75;
+      nombre1: String(1..max_char);
+      nombre2: String(1..max_char);
+   BEGIN
+      nombre1 := (P1.Apellido1 & p1.Apellido2 & p1.nombre);
+      nombre1 := (others => ' ');
+      nombre2 := (P2.Apellido1 & p2.Apellido2 & p2.nombre);
+      nombre2 := (others => ' ');
+
+      if nombre1 > nombre2 then
+         res := 1;
+      else if nombre1 < nombre2 then
+         res := -1;
+      else
+         res := 0;
+      end if;
+      end if;
+
+      return res;
+
+   end comparar;
+
 END ALista_Personas;
