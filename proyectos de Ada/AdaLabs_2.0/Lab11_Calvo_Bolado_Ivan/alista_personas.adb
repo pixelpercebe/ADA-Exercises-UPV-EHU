@@ -59,9 +59,9 @@ PACKAGE BODY ALista_Personas IS
       nombre2: String(1..max_char);
    BEGIN
       nombre1 := (P1.Apellido1 & p1.Apellido2 & p1.nombre);
-      nombre1 := (others => ' ');
+      Put_line(nombre1);
       nombre2 := (P2.Apellido1 & p2.Apellido2 & p2.nombre);
-      nombre2 := (others => ' ');
+      Put_line(nombre2);
 
       if nombre1 > nombre2 then
          res := 1;

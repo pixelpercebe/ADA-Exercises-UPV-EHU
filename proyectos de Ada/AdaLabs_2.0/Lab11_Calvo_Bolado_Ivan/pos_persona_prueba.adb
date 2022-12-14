@@ -9,16 +9,21 @@ L  :A_Personas;
 nombrePer : T_Nombre;
 
 BEGIN
-
-nombrePer.nombre := "Roberto";
 nombrePer.nombre := (others => ' ');
-nombrePer.Apellido1 := "Alberdi";
+nombrePer.nombre(1..7) := "Roberto";
+put(nombrePer.nombre);
 nombrePer.apellido1 := (others => ' ');
-nombrePer.Apellido2 := "Macias";
+nombrePer.Apellido1(1..7) := "Alberdi";
+put(nombrePer.Apellido1);
 nombrePer.apellido2 := (others => ' ');
+nombrePer.Apellido2(1..8) := "zarasola";
+put(nombrePer.Apellido2);
 
 
+new_line;
+new_line;
 Cargar_Personas("Personas6.txt",L);
+put_line(comparar(L.persona.NombreApellidos,nombrePer)'img);
 Escribir_Personas(L);
 Pos_Persona(L,nombrePer,ant,act);
 Put_Line("Personas ant y act:");
