@@ -10,7 +10,6 @@ L  :A_Personas;
 BEGIN
 
 new_line;
-new_line;
 Cargar_Personas("Personas6.txt",L);
 put_line(comparar(L.persona.NombreApellidos,L.sig.persona.NombreApellidos)'img);
 Escribir_Personas(L);

@@ -67,4 +67,26 @@ PACKAGE BODY ALista_Personas IS
       return res;
    end comparar;
 
+   procedure Actualiza_Domicilio(L: in out A_Personas; Nom: T_Nombre; C: T_ciudad) IS 
+   act : A_Personas := L;
+   BEGIN
+      while act /= null and then act.persona.NombreApellidos /= nom loop
+         act := act.sig;
+      end loop;
+      if act.persona.NombreApellidos = nom then
+         act.persona.domicilio := C;
+      end if;
+   END Actualiza_Domicilio;
+
+   procedure Inserta_Persona(L: in out A_Personas; P: A_Personas) is
+
+
+   begin
+   pos := Pos_Persona();
+   if not ((pos <= L.cont and pos >= L.lista'first) and then Mismo_Nombre(L.lista(pos) , P.Nombre_Apellidos))
+
+   end if;
+
+
+   end Inserta_Persona;
 END ALista_Personas;

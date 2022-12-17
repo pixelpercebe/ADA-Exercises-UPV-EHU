@@ -32,5 +32,18 @@ PACKAGE ALista_Personas IS
    -- significa que se debe insertar como primero en L.
 
    function comparar(P1,P2:T_Nombre) return integer;
+   --Post: si (P1 > P2) = 1, (P1 < P2) = -1 , (P1 = P2) = 0
+
+   procedure Actualiza_Domicilio(L: in out A_Personas; Nom: T_Nombre; C: T_ciudad);
+   -- pre: Nom es el nombre y apellido de una persona y C es una
+   -- ciudad. L ordenado alfabéticamente por apellidos y nombre.
+   -- post: Modifica en L el domicilio de la persona Nom por C. Si no hay
+   -- ninguna persona con el nombre Nom la lista no se modifica
+
+   procedure Inserta_Persona(L: in out A_Personas; P: A_Personas);
+   -- pre: L ordenado alfabéticamente por apellidos y nombre. P es la
+   -- información de una única persona.
+   -- post: Se inserta ordenadamente P en L. Si la misma persona P ya está en
+   -- L, no se actualiza L.
 
 END ALista_Personas;
