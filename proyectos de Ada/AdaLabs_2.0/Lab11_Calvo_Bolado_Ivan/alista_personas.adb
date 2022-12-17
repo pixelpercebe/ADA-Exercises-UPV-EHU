@@ -44,36 +44,27 @@ PACKAGE BODY ALista_Personas IS
    BEGIN
       Act := L;
       Ant := L;
-      while act /= NULL and then comparar(act.persona.NombreApellidos, ant.persona.NombreApellidos) < 0 loop
-         act := act.sig;
-         ant := ant.sig;
+      while act /= NULL and then comparar(act.persona.NombreApellidos,P) < 0 loop
+         ant := act;
+         act := ant.sig;
       end loop;
    end Pos_Persona;
 
 
    function comparar(P1,P2:T_Nombre) return integer is
-
       res: integer;
-      max_char: integer := 75;
-      nombre1: String(1..max_char);
-      nombre2: String(1..max_char);
    BEGIN
-      nombre1 := (P1.Apellido1 & p1.Apellido2 & p1.nombre);
-      Put_line(nombre1);
-      nombre2 := (P2.Apellido1 & p2.Apellido2 & p2.nombre);
-      Put_line(nombre2);
-
-      if nombre1 > nombre2 then
+      if (P1.apellido1 > P2.Apellido1) or (P1.apellido1 = P2.apellido1 and P1.apellido2 > P2.apellido2) or 
+         (P1.apellido1 = P2.apellido1 and P1.apellido2 = P2.apellido2 and P1.nombre > P2.nombre) then
          res := 1;
-      else if nombre1 < nombre2 then
+      else if (P1.apellido1 < P2.Apellido1) or (P1.apellido1 = P2.apellido1 and P1.apellido2 < P2.apellido2) or 
+         (P1.apellido1 = P2.apellido1 and P1.apellido2 = P2.apellido2 and P1.nombre < P2.nombre) then
          res := -1;
       else
          res := 0;
       end if;
       end if;
-
       return res;
-
    end comparar;
 
 END ALista_Personas;
