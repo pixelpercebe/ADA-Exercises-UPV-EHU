@@ -46,4 +46,17 @@ PACKAGE ALista_Personas IS
    -- post: Se inserta ordenadamente P en L. Si la misma persona P ya está en
    -- L, no se actualiza L.
 
+   procedure Filtra_Edad(L: A_Personas; LMay, LMen: out A_Personas);
+   -- pre: L ordenado alfabéticamente por apellidos y nombre.
+   -- post: LMay contiene las personas mayores de edad de L. LMen contiene las
+   -- personas menores de edad de L. Las listas quedan también ordenadas.
+
+   procedure Filtra_Ciudad(L: in out A_Personas; C: t_ciudad; LC: out A_Personas);
+   -- pre: L ordenada alfabéticamente por apellidos y nombre.
+   -- post: LC contiene las personas de L domiciliadas en la ciudad C.
+   -- L se actualiza y ya no tiene ninguna persona de esa ciudad.
+   -- LC también está ordenada.
+
+   procedure eliminar_persona (L:in out A_Personas; P: T_Persona);
+
 END ALista_Personas;

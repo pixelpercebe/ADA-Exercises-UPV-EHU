@@ -70,23 +70,66 @@ PACKAGE BODY ALista_Personas IS
    procedure Actualiza_Domicilio(L: in out A_Personas; Nom: T_Nombre; C: T_ciudad) IS 
    act : A_Personas := L;
    BEGIN
-      while act /= null and then act.persona.NombreApellidos /= nom loop
+      while act /= null and then not mismo_nombre(act.persona,nom) loop
          act := act.sig;
       end loop;
-      if act.persona.NombreApellidos = nom then
+      if mismo_nombre(act.persona,nom) then
          act.persona.domicilio := C;
       end if;
    END Actualiza_Domicilio;
 
    procedure Inserta_Persona(L: in out A_Personas; P: A_Personas) is
-
-
+   pers1,pers2:A_Personas;
    begin
-   pos := Pos_Persona();
-   if not ((pos <= L.cont and pos >= L.lista'first) and then Mismo_Nombre(L.lista(pos) , P.Nombre_Apellidos))
-
+   Pos_Persona(L,P.persona.NombreApellidos,pers1,pers2);
+   if pers1 /= null then
+      P.sig := pers1.sig;
+      pers1.sig := P; 
    end if;
-
-
    end Inserta_Persona;
+
+   procedure Filtra_Edad(L: A_Personas; LMay, LMen: out A_Personas) is 
+      act:A_Personas:=L;
+   begin
+      while act /= null loop
+         if es_mayor_edad(act.persona) then
+            Inserta_Persona(LMay,act);
+         else
+            Inserta_Persona(LMen, act);
+         end if;
+         act := act.sig;
+      end loop;
+   end Filtra_Edad;
+
+
+   procedure Filtra_Ciudad(L:in out A_Personas; C: t_ciudad; LC: out A_Personas) is
+   act : A_Personas := L;
+   begin
+
+      while act /= null loop
+         if act.persona.domicilio = C then 
+            Inserta_Persona(LC,act);
+            eliminar_persona(L,act.persona);
+         end if;
+         act := act.sig;
+      end loop;
+
+   end Filtra_Ciudad;
+
+   procedure eliminar_persona (L: in out A_Personas; P: T_Persona) is
+      ant: A_Personas := L;
+      act: A_Personas := L;
+   begin
+      while act /= null and then act.persona /= P loop
+         ant := act;
+         act := ant.sig;
+      end loop;
+      if act /= null and then act.persona = P then
+         if act = L then
+            L := L.sig;
+         else
+            ant.sig := act.sig;
+         end if;
+      end if;
+   end eliminar_persona;
 END ALista_Personas;
