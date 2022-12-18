@@ -14,13 +14,8 @@ PACKAGE BODY ALista_Personas IS
       Open(F, In_File, S);
       WHILE NOT End_Of_File(F) LOOP
          P:= Cargar_Persona(F);
-         IF L=NULL THEN
-            L:= NEW T_Nodo'(P, NULL);
-            Act:=L;
-         ELSE
-            Act.Sig:= NEW T_Nodo'(P,NULL);
-            Act:= Act.Sig;
-         END IF;
+         act:= NEW T_Nodo'(P,NULL);
+         Inserta_Persona(L,act);
       END LOOP;
       Close(F);
    END Cargar_Personas;
@@ -95,9 +90,17 @@ PACKAGE BODY ALista_Personas IS
    pers1,pers2:A_Personas;
    begin
    Pos_Persona(L,P.persona.NombreApellidos,pers1,pers2);
-   if pers1 /= null and then pers2 /= P then
-      P.sig := pers1.sig;
-      pers1.sig := P; 
+   if pers2 /= P then
+      if pers2 = pers1 THEN
+         P.sig := L;
+         L := P;
+      else
+         P.sig := pers1.sig;
+         pers1.sig := P;
+      end if; 
+
+
+
    end if;
    end Inserta_Persona;
 
