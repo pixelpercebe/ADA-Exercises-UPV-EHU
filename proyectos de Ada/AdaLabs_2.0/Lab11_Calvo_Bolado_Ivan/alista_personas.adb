@@ -92,8 +92,8 @@ PACKAGE BODY ALista_Personas IS
    begin
       Pos_Persona(L,P.persona.NombreApellidos,ant,act);
       if act /= P then
-         aux := new t_nodo'(P.persona,null); --creamos un nodo identico al que apunta P para poder añadirlo en la otra lista sin modificar la original.
-         if act = ant THEN
+         aux := new t_nodo'(P.persona,null);  --creamos un nodo identico al que apunta P para poder añadirlo en la otra lista sin modificar la original.
+         if act = ant THEN                    --(puede crearse aqui o en el subprograma que llame a este)
             aux.sig := L;
             L := aux;
          else
