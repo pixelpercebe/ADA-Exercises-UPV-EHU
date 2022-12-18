@@ -1,5 +1,5 @@
-WITH Ada.Text_IO;
-USE Ada.Text_IO;
+WITH Ada.Text_IO,ada.Integer_Text_IO;
+USE Ada.Text_IO,ada.Integer_Text_IO;
 
 PACKAGE BODY ALista_Personas IS
 
@@ -40,6 +40,19 @@ PACKAGE BODY ALista_Personas IS
       END IF;
    END Escribir_Personas;
 
+   PROCEDURE Escribir_Persona (AP:A_Personas) IS
+   BEGIN
+      IF AP = null then
+         put("NULL ");
+         New_Line;
+      else
+         Put("     "); Put(AP.persona.NombreApellidos.Nombre); Put(AP.persona.NombreApellidos.Apellido1); Put(AP.persona.NombreApellidos.Apellido2);
+         Put("     "); Put(AP.Persona.Domicilio'Img);
+         Put("     "); Put(AP.Persona.Edad,0);
+         New_Line;
+      end if;
+   END Escribir_Persona;
+
    procedure Pos_Persona(L: in A_Personas; P: T_Nombre; Ant, Act: out A_Personas) IS
    BEGIN
       Act := L;
@@ -73,7 +86,7 @@ PACKAGE BODY ALista_Personas IS
       while act /= null and then not mismo_nombre(act.persona,nom) loop
          act := act.sig;
       end loop;
-      if mismo_nombre(act.persona,nom) then
+      if act /= null and then mismo_nombre(act.persona,nom) then
          act.persona.domicilio := C;
       end if;
    END Actualiza_Domicilio;
@@ -82,7 +95,7 @@ PACKAGE BODY ALista_Personas IS
    pers1,pers2:A_Personas;
    begin
    Pos_Persona(L,P.persona.NombreApellidos,pers1,pers2);
-   if pers1 /= null then
+   if pers1 /= null and then pers2 /= P then
       P.sig := pers1.sig;
       pers1.sig := P; 
    end if;

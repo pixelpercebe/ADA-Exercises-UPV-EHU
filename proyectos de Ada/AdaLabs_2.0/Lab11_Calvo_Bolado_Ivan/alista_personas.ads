@@ -31,9 +31,6 @@ PACKAGE ALista_Personas IS
    -- persona P en L, Act apunta a la misma persona P, o si Ant=Act
    -- significa que se debe insertar como primero en L.
 
-   function comparar(P1,P2:T_Nombre) return integer;
-   --Post: si (P1 > P2) = 1, (P1 < P2) = -1 , (P1 = P2) = 0
-
    procedure Actualiza_Domicilio(L: in out A_Personas; Nom: T_Nombre; C: T_ciudad);
    -- pre: Nom es el nombre y apellido de una persona y C es una
    -- ciudad. L ordenado alfabéticamente por apellidos y nombre.
@@ -57,6 +54,16 @@ PACKAGE ALista_Personas IS
    -- L se actualiza y ya no tiene ninguna persona de esa ciudad.
    -- LC también está ordenada.
 
-   procedure eliminar_persona (L:in out A_Personas; P: T_Persona);
 
+
+   --SUBPROGRAMAS COMPLEMENTARIOS--
+   function comparar(P1,P2:T_Nombre) return integer;
+   --Post: si (P1 > P2) = 1, (P1 < P2) = -1 , (P1 = P2) = 0
+
+   procedure eliminar_persona (L:in out A_Personas; P: T_Persona);
+   --Post: L se actualiza y ya no tiene a P
+
+   procedure escribir_persona (AP:A_Personas); --Implementado pra poder probar el subprograma pos_persona.
+   -- salida: una Persona (SE)
+   -- pos: Escribe la informacion de una persona en una linea.
 END ALista_Personas;
