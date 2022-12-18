@@ -64,7 +64,7 @@ BEGIN
    Put("Caso 1: Lista vacia. La posicion en la que debera estar cualquier persona es la 1, y obtiene que ");
    Pos_Persona(L1, N1,ant,act);
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;
@@ -79,7 +79,7 @@ BEGIN
    Put("Caso 2: Lista con un elemento que esta. Posicion de una persona que esta es la 1, y obtiene que ");
    Pos_Persona(L2, N1,ant,act);
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;New_Line;
@@ -88,7 +88,7 @@ BEGIN
    N1.Apellido1(1..7):= "Aguirre";
    Pos_Persona(L2, N1,ant,act); 
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;New_Line;
@@ -97,7 +97,7 @@ BEGIN
    N1.Apellido1(1..7):= "Gomez  ";
    Pos_Persona(L2, N1,ant,act); 
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;New_Line;
@@ -113,7 +113,7 @@ BEGIN
    put(N1.Apellido1); put(N1.Apellido2); put(N1.Nombre);
    Pos_Persona(L3, N1,ant,act);
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;New_Line;
@@ -123,7 +123,7 @@ BEGIN
    put(N1.Apellido1); put(N1.Apellido2); put(N1.Nombre);
    Pos_Persona(L3, N1,ant,act);
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;New_Line;
@@ -132,7 +132,7 @@ BEGIN
    put(N2.Apellido1); put(N2.Apellido2); put(N2.Nombre);
    Pos_Persona(L3, N2,ant,act);
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;New_Line;
@@ -142,7 +142,7 @@ BEGIN
    put(N3.Apellido1); put(N3.Apellido2); put(N3.Nombre);
    Pos_Persona(L3, N2,ant,act);
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;New_Line;
@@ -151,7 +151,7 @@ BEGIN
    put(N3.Apellido1); put(N3.Apellido2); put(N3.Nombre);
    Pos_Persona(L3, N3,ant,act);
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    New_Line;New_Line;
@@ -161,7 +161,7 @@ BEGIN
    put(N3.Apellido1); put(N3.Apellido2); put(N3.Nombre);
    Pos_Persona(L3, N3,ant,act);
    new_line;
-   put_line("la posicion debera ser entre: ");
+   put_line("Debe estar entre: ");
    Escribir_Persona(ant);
    Escribir_Persona(act);
    

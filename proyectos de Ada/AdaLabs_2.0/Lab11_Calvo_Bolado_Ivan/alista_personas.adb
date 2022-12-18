@@ -3,9 +3,7 @@ USE Ada.Text_IO,ada.Integer_Text_IO;
 
 PACKAGE BODY ALista_Personas IS
 
-   PROCEDURE Cargar_Personas (
-         S :        String;
-         L :    OUT A_Personas) IS
+   PROCEDURE Cargar_Personas (S:String;L:OUT A_Personas) IS
       F   : File_Type;
       P   : T_Persona;
       Act : A_Personas;
@@ -20,7 +18,6 @@ PACKAGE BODY ALista_Personas IS
       Close(F);
    END Cargar_Personas;
 
-
    PROCEDURE Escribir_Personas (
          L : A_Personas) IS
       Act : A_Personas := L;
@@ -29,7 +26,7 @@ PACKAGE BODY ALista_Personas IS
          Put_Line("NULL");
       ELSE
          WHILE Act/=NULL LOOP
-            Escribir_Persona(Act.Persona); -- llamada al package Persona
+            Escribir_Persona(Act.Persona);
             Act:= ACt.Sig;
          END LOOP;
       END IF;
@@ -47,6 +44,9 @@ PACKAGE BODY ALista_Personas IS
          New_Line;
       end if;
    END Escribir_Persona;
+
+
+
 
    procedure Pos_Persona(L: in A_Personas; P: T_Nombre; Ant, Act: out A_Personas) IS
    BEGIN
@@ -87,31 +87,32 @@ PACKAGE BODY ALista_Personas IS
    END Actualiza_Domicilio;
 
    procedure Inserta_Persona(L: in out A_Personas; P: A_Personas) is
-   pers1,pers2:A_Personas;
+   ant,act:A_Personas;
+   aux : A_Personas;
    begin
-   Pos_Persona(L,P.persona.NombreApellidos,pers1,pers2);
-   if pers2 /= P then
-      if pers2 = pers1 THEN
-         P.sig := L;
-         L := P;
-      else
-         P.sig := pers1.sig;
-         pers1.sig := P;
-      end if; 
-
-
-
-   end if;
+      Pos_Persona(L,P.persona.NombreApellidos,ant,act);
+      if act /= P then
+         aux := new t_nodo'(P.persona,null); --creamos un nodo identico al que apunta P para poder añadirlo en la otra lista sin modificar la original.
+         if act = ant THEN
+            aux.sig := L;
+            L := aux;
+         else
+            aux.sig := ant.sig;
+            ant.sig := aux;
+         end if; 
+      end if;
    end Inserta_Persona;
 
    procedure Filtra_Edad(L: A_Personas; LMay, LMen: out A_Personas) is 
       act:A_Personas:=L;
    begin
+      LMay := null;
+      LMen := null;
       while act /= null loop
          if es_mayor_edad(act.persona) then
             Inserta_Persona(LMay,act);
          else
-            Inserta_Persona(LMen, act);
+            Inserta_Persona(LMen,act);
          end if;
          act := act.sig;
       end loop;
