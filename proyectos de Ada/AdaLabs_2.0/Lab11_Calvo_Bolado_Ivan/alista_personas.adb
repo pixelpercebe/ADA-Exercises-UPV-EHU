@@ -34,6 +34,7 @@ PACKAGE BODY ALista_Personas IS
 
    PROCEDURE Escribir_Persona (AP:A_Personas) IS
    BEGIN
+      New_Line;
       IF AP = null then
          put("NULL ");
          New_Line;
