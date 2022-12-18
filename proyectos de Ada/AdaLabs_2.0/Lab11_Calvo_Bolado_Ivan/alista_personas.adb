@@ -58,7 +58,6 @@ PACKAGE BODY ALista_Personas IS
       end loop;
    end Pos_Persona;
 
-
    function comparar(P1,P2:T_Nombre) return integer is
       res: integer;
    BEGIN
@@ -118,11 +117,9 @@ PACKAGE BODY ALista_Personas IS
       end loop;
    end Filtra_Edad;
 
-
    procedure Filtra_Ciudad(L:in out A_Personas; C: t_ciudad; LC: out A_Personas) is
    act : A_Personas := L;
    begin
-
       while act /= null loop
          if act.persona.domicilio = C then 
             Inserta_Persona(LC,act);
@@ -130,7 +127,6 @@ PACKAGE BODY ALista_Personas IS
          end if;
          act := act.sig;
       end loop;
-
    end Filtra_Ciudad;
 
    procedure eliminar_persona (L: in out A_Personas; P: T_Persona) is
