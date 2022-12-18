@@ -76,10 +76,9 @@ PACKAGE BODY ALista_Personas IS
 
    procedure Actualiza_Domicilio(L: in out A_Personas; Nom: T_Nombre; C: T_ciudad) IS 
    act : A_Personas := L;
+   ant : A_Personas := L;
    BEGIN
-      while act /= null and then not mismo_nombre(act.persona,nom) loop
-         act := act.sig;
-      end loop;
+      Pos_Persona(L,nom,ant,act);
       if act /= null and then mismo_nombre(act.persona,nom) then
          act.persona.domicilio := C;
       end if;
