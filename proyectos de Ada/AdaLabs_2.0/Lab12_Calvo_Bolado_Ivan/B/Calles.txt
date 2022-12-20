@@ -1,0 +1,36 @@
+Aita_Donostia
+3 4
+Carlos_I
+2 2
+Madrid
+3 3
+Felipe_IV
+1 1
+Isabel_II
+4 3
+Balleneros
+3 2
+Catalina_Erauso
+2 2
+Corsarios_Vascos
+1 1
+Aragon
+0 2
+Amezketa
+1 2
+Pedro_Manuel_Collado
+1 0
+Eustasio_Amilibia
+2 2
+Ferrerias
+2 1
+Gregorio_Ordonez
+0 1
+Illunbe
+1 1
+Javier_Barcaiztegui
+1 1
+Jose_Maria_Salaberria
+2 3
+Toribio_Alzaga
+1 2

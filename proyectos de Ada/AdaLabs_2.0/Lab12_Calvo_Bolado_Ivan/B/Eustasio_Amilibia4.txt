@@ -1,0 +1,10 @@
+9
+1A 4 Eustasio_Amilibia4-1 1A_4
+1B 0 Eustasio_Amilibia4-2 1B_0
+1C 3 Eustasio_Amilibia4-3 1C_3
+2A 4 Eustasio_Amilibia4-4 2A_4
+2B 5 Eustasio_Amilibia4-5 2B_5
+2C 3 Eustasio_Amilibia4-6 2C_3
+3A 1 Eustasio_Amilibia4-7 3A_1  
+3B 0 Eustasio_Amilibia4-8 3B_0
+3C 1 Eustasio_Amilibia4-9 3C_1 

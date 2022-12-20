@@ -1,0 +1,4 @@
+3
+1A 2 Aita_Donostia2-1 1A_2
+2A 1 Aita_Donostia2-2 2A_1
+3A 5 Aita_Donostia2-3 3A_5

@@ -1,0 +1,11 @@
+10
+1A 2 Balleneros4-1 1A_2
+1B 3 Balleneros4-2 1B_3
+2A 3 Balleneros4-3 2A_3
+2B 4 Balleneros4-4 2B_4
+3A 5 Balleneros4-5 3A_5
+3B 3 Balleneros4-6 3B_3
+4A 1 Balleneros4-7 4A_1
+4B 1 Balleneros4-8 4B_1
+5A 1 Balleneros4-9 5A_1
+5B 1 Balleneros4-10 5B_1

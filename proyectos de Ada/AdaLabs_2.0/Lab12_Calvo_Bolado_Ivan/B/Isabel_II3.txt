@@ -1,0 +1,11 @@
+10
+1A 2 Isabel_II3-1 1A_2
+1B 3 Isabel_II3-2 1B_3
+2A 3 Isabel_II3-3 2A_3
+2B 4 Isabel_II3-4 2B_4
+3A 5 Isabel_II3-5 3A_5
+3B 3 Isabel_II3-6 3B_3
+4A 1 Isabel_II3-7 4A_1  
+4B 1 Isabel_II3-8 4B_1
+5A 1 Isabel_II3-9 5A_1 
+5B 1 Isabel_II3-10 5B_1 

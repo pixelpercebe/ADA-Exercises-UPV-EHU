@@ -1,0 +1,7 @@
+6
+1A 2 Toribio_Alzaga1-1 1A_2
+1B 0 Toribio_Alzaga1-2 1B_0
+2A 4 Toribio_Alzaga1-3 2A_4
+2B 4 Toribio_Alzaga1-4 2B_4
+3A 5 Toribio_Alzaga1-5 3A_5
+3B 3 Toribio_Alzaga1-6 3B_3

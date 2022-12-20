@@ -1,0 +1,7 @@
+6
+1A 2 Gregorio_Ordonez2-1 1A_2
+1B 0 Gregorio_Ordonez2-2 1B_0
+2A 7 Gregorio_Ordonez2-3 2A_7
+2B 4 Gregorio_Ordonez2-4 2B_4
+3A 5 Gregorio_Ordonez2-5 3A_5
+3B 0 Gregorio_Ordonez2-6 3B_0

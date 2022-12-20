@@ -1,0 +1,5 @@
+4
+1A 4 Javier_Barcaiztegui1-1 1A_4
+1B 7 Javier_Barcaiztegui1-2 1B_7
+2A 3 Javier_Barcaiztegui1-3 2A_3
+2B 0 Javier_Barcaiztegui1-4 2B_0

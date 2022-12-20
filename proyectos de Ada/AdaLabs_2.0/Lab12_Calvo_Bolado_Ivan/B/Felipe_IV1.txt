@@ -1,0 +1,11 @@
+10
+1A 2 Felipe_IV1-1 1A_2
+1B 3 Felipe_IV1-2 1B_3
+2A 3 Felipe_IV1-3 2A_3
+2B 4 Felipe_IV1-4 2B_4
+3A 5 Felipe_IV1-5 3A_5
+3B 3 Felipe_IV1-6 3B_3
+4A 1 Felipe_IV1-7 4A_1  
+4B 1 Felipe_IV1-8 4B_1
+5A 1 Felipe_IV1-9 5A_1 
+5B 1 Felipe_IV1-10 5B_1 

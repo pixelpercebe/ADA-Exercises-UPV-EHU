@@ -1,0 +1,10 @@
+9
+1A 2 Ferrerias2-1 1A_2
+1B 8 Ferrerias2-2 1B_8
+1C 3 Ferrerias2-3 1C_3
+2A 4 Ferrerias2-4 2A_4
+2B 0 Ferrerias2-5 2B_0
+2C 3 Ferrerias2-6 2C_3
+3A 1 Ferrerias2-7 3A_1  
+3B 1 Ferrerias2-8 3B_1
+3C 0 Ferrerias2-9 3C_0 

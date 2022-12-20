@@ -1,0 +1,10 @@
+9
+1A 2 Madrid5-1 1A_2
+1B 3 Madrid5-2 1B_3
+1C 3 Madrid5-3 1C_3
+2A 4 Madrid5-4 2A_4
+2B 5 Madrid5-5 2B_5
+2C 3 Madrid5-6 2C_3
+3A 1 Madrid5-7 3A_1  
+3B 1 Madrid5-8 3B_1
+3C 1 Madrid5-9 3C_1 

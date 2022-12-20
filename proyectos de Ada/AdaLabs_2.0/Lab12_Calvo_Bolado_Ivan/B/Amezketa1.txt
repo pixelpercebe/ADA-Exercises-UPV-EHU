@@ -1,0 +1,7 @@
+6
+1A 2 Amezketa1-1 1A_2
+1B 3 Amezketa1-2 1B_3
+2A 1 Amezketa1-3 2A_1
+2B 4 Amezketa1-4 2B_4
+3A 0 Amezketa1-5 3A_0
+3B 3 Amezketa1-6 3B_3
