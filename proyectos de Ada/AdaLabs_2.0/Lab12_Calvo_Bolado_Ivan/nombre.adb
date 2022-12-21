@@ -3,10 +3,8 @@ with ada.Text_IO; use ada.Text_IO;
 package body nombre IS
 
 PROCEDURE Cargar_Nombre(F: File_Type; Nom: out T_Nombre) IS
-N : positive;
 begin
-  Get_Line(F,Nom.nom,N);
-  nom.Cont := N;
+  Get_Line(F,Nom.nom,nom.cont);
 end Cargar_Nombre;
 
 PROCEDURE Escribir_Nombre(Nom: T_Nombre) is
