@@ -9,14 +9,14 @@ PACKAGE Nombre IS
 
    PROCEDURE Cargar_Nombre(F: File_Type; Nom: out T_Nombre);
    -- entrada: un string (en fich= F)
-   -- pre: F es un fichero abierto de lectura y contiene al menos algún caracter
-   --      hasta final de línea.
+   -- pre: F es un fichero abierto de lectura y contiene al menos algï¿½n caracter
+   --      hasta final de lï¿½nea.
    -- post: Nom contine el nombre obtenido de F.
 
    PROCEDURE Escribir_Nombre(Nom: T_Nombre);
    -- salida: String(SE)
-   -- post: escribe el nombre de la calle y salta de línea
-   --   NOTA: Sólo se escriben los caracteres de la calle, sin escribir la parte basura
+   -- post: escribe el nombre de la calle y salta de lï¿½nea
+   --   NOTA: Sï¿½lo se escriben los caracteres de la calle, sin escribir la parte basura
    --      Es decir, considerando los caracteres desde el principio hasta el valor indicado por Cont.
 
    FUNCTION Menor(Nom1, Nom2: T_Nombre) RETURN Boolean;

@@ -26,7 +26,7 @@
   "Obtener datos": {
     "prefix": "Get",
     "scope": "ada",
-    "body": "Ger(${1:variable_donde_guardar});",
+    "body": "Get(${1:variable_donde_guardar});",
     "description": "Comando que obtiene datos de teclado"
   }
 }
