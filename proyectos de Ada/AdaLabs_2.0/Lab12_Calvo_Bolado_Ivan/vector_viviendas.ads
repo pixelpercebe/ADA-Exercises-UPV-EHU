@@ -6,15 +6,15 @@ PACKAGE Vector_Viviendas IS
 
    PROCEDURE Cargar_Viviendas(F:File_Type; VVs: out t_Vector_Viviendas);
    -- entrada: secuencia viviendas (fich=F)
-   -- pre: F es un fichero abierto. En F hay información de tantas viviendas como la capacidad de VVs.
-   --      El fichero contiene la información de cada vivienda en una línea.
+   -- pre: F es un fichero abierto. En F hay informaciï¿½n de tantas viviendas como la capacidad de VVs.
+   --      El fichero contiene la informaciï¿½n de cada vivienda en una lï¿½nea.
    --      Por cada vivienda aparece y en ese orden: Piso, Mano, Censados,
    --      y De_Quien (mirar ficheros de datos).
-   -- post: VVs contine la información de todas las viviendas de F. VVs está lleno.
+   -- post: VVs contine la informaciï¿½n de todas las viviendas de F. VVs estï¿½ lleno.
 
    PROCEDURE Escribir_Viviendas(VVs: t_Vector_Viviendas);
    -- salida: secuencia de viviendas(SE)
-   -- post: escribe información de las viviendas de VVs
+   -- post: escribe informaciï¿½n de las viviendas de VVs
 
 END Vector_Viviendas;
 
