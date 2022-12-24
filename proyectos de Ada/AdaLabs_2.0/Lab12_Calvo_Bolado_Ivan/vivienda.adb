@@ -18,7 +18,7 @@ begin
   Put(V.piso,0);put(V.mano);
   new_line;
   put_line("Propietario: ");
-  put(V.propietario.nom(1..v.propietario.cont));
+  put_line(V.propietario.nom(1..v.propietario.cont));
   new_line;
   put_line("Censados: ");
   put(V.censados,0);

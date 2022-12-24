@@ -13,13 +13,13 @@ PACKAGE Lista_Edificios IS
 
    PROCEDURE Cargar_Edificios_Calle_Num(C: T_Nombre; Num: Natural; Pares: boolean; E: out a_Lista_Edificios);
    -- entrada: secuencia viviendas (fich="B/"&C&N&".txt")
-   -- pre: C es el nombre de una calle que exite. Num número de portales pares/impares.
+   -- pre: C es el nombre de una calle que exite. Num nï¿½mero de portales pares/impares.
    --      Pares indica si Num se refiere a portales pares o impares.
-   --      Existe Num ficheros en la carpeta B con nombre C añadiendo Portal y extensión txt,
-   --      contiene primero un número que indica la cantidad de viviendas de ese portal.
-   --      Luego por cada vivienda en cada línea aparece y en ese orden: Piso, Mano, Censados
+   --      Existe Num ficheros en la carpeta B con nombre C aï¿½adiendo Portal y extensiï¿½n txt,
+   --      contiene primero un nï¿½mero que indica la cantidad de viviendas de ese portal.
+   --      Luego por cada vivienda en cada lï¿½nea aparece y en ese orden: Piso, Mano, Censados
    --      y Propietario (mirar ficheros de datos).
-   -- post: E contine la información de todas los edificios de la calle C.
+   -- post: E contine la informaciï¿½n de todas los edificios de la calle C.
 
    PROCEDURE Escribir_Edificios(E: a_Lista_Edificios);
    -- salida: secuencia de viviendas(SE)

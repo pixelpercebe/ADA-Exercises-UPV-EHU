@@ -3,11 +3,10 @@ package body vector_viviendas IS
 
 PROCEDURE Cargar_Viviendas(F:File_Type; VVs: out t_Vector_Viviendas) is
 
-i:integer:=1;
+i:integer:=VVs'first;
 V:t_vivienda;
 begin
 
-Skip_Line(F);
 while not End_Of_File(F) loop
   Cargar_Vivienda(F,V);
   VVs(i) := V;
