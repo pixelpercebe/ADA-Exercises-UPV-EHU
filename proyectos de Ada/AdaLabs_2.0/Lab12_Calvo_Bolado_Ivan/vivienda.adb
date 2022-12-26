@@ -14,16 +14,7 @@ end Cargar_Vivienda;
 PROCEDURE Escribir_Vivienda(V: T_Vivienda) is
 
 begin
-  put_line("Piso y mano: ");
-  Put(V.piso,0);put(V.mano);
-  new_line;
-  put_line("Propietario: ");
-  put_line(V.propietario.nom(1..v.propietario.cont));
-  new_line;
-  put_line("Censados: ");
-  put(V.censados,0);
-  new_line;
-  new_line;
+  put_line("Piso " & V.piso'img & V.mano & " Censados: " & V.censados'img & "- " & V.propietario.nom(1..v.propietario.cont));
 end Escribir_Vivienda;
 
 end vivienda;
