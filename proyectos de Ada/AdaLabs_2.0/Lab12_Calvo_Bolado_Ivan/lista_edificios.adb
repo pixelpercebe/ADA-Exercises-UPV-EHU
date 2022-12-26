@@ -8,8 +8,9 @@ N,i,cont:integer; --n = tamaño del VVs (numero de viviendas del loque)
 act : a_Lista_Edificios;
 
 begin
-  i;  --controla el numero del edificio al que acceder
-  cont := 1; --controla el numero de iteraciones
+  --i controla el numero del edificio al que acceder
+  --cont controla el numero de iteraciones
+  cont := 1;
   E := null;
   --Una iteracion por edificio
   while cont <= num loop
