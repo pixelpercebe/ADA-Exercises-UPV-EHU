@@ -52,15 +52,18 @@ begin
 
 end Escribir_Edificios;
 
-function Contar_viviendas_vacia(E: a_lista_Edificios) return integer is
-  ed_act : a_lista_Edificios := E;
-  cantidad : integer := 0;
+procedure Contar_censados_y_vacias(E: a_lista_Edificios; censados, vacias: out integer) is
+  act : a_lista_Edificios := E;
+  total_cen,total_vac : integer := 0;
 begin
-  while ed_act /= null loop 
-      cantidad := cantidad + contar_vivienda_vacia(ed_act.viviendas.all);
-      ed_act := ed_act.Sig_Edificio;
+  while act /= null loop 
+      contar_censados_y_vacia(act.viviendas.all,censados,vacias);
+      total_cen := total_cen + censados;
+      total_vac := total_vac + vacias;
+      act := act.Sig_Edificio;
   end loop;
-  return cantidad;
-end Contar_viviendas_vacia;
+  censados := total_cen;
+  vacias := total_vac;
+end Contar_censados_y_vacias;
 
 end Lista_Edificios;

@@ -25,7 +25,7 @@ PACKAGE Lista_Edificios IS
    -- salida: secuencia de viviendas(SE)
    -- post: escribe los edificios de L
 
-   function Contar_viviendas_vacia(E: a_lista_Edificios) return integer;
+   procedure Contar_censados_y_vacias(E: a_lista_Edificios; censados, vacias: out integer);
    --post: devuelve el numero de viviendas de un bloque que estan deshabitadas
 
 END Lista_Edificios;

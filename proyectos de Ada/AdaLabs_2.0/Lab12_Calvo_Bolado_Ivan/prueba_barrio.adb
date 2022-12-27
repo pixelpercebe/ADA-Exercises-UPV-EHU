@@ -8,9 +8,5 @@ BEGIN
    Cargar_Barrio(Calles);
 
    Escribir_Barrio(Calles);
-
-   put("Cantidad de viviendas vacias: ");
-   N := cuantos_vacios(Calles);
-   put(N'img);
 END Prueba_Barrio;
 

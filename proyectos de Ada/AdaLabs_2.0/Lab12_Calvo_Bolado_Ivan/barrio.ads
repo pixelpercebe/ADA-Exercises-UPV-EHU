@@ -30,4 +30,10 @@ PACKAGE Barrio IS
    --Post: devolvera la cantidad de viviendas vacias que hay en el barrio en 
    --una vivienda vacia hay 0 censados.
 
+   procedure eliminar_barrio(B:in out a_lista_calles; nom: t_nombre; calle_nodo: out a_lista_calles);
+   --post: el barrio con nom como nombre desaparece de la lista y te lo devuelve
+
+   procedure sustiutuir_barrio(B: in out a_lista_calles;nom_ant,nom_act : t_nombre);
+   --post: la calle ha cambiado de nombre y se ha reecolocado en la lista respetadno el orden alfabetico segun nombre
+   --si es necesario.
 end Barrio;

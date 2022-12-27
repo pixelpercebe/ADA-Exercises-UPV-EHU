@@ -77,27 +77,75 @@ end Escribir_Barrio;
 
 
 
-  function cuantos_censados(B : A_Lista_Calles) return integer is
-   suma: integer;
+  function cuantos_censados(B : A_Lista_Calles) return Integer is
+   censados,N,res : integer := 0;
    act : a_lista_calles := B;
   begin
-   suma := 0;
-   while act /= null loop
-     suma := suma + act.impares.num + act.pares.num;
-     act := act.sig_calle;
+   while act /= null loop 
+    contar_censados_y_vacias(B.impares,censados,N);
+    res := res + censados;
+    contar_censados_y_vacias(B.pares,censados,N);
+    res := res + censados;
+    act := act.sig_calle;
    end loop;
-   return suma;
+   return res;
   end cuantos_censados;
 
   function cuantos_vacios(B: A_lista_calles) return integer is
-    cantidad : integer := 0;
+    res,vacias,N  : integer := 0;
     act : a_lista_calles := B;
   begin
     while act /= null loop
-      cantidad := cantidad + Contar_viviendas_vacia(act.impares) + Contar_viviendas_vacia(act.pares);
+      contar_censados_y_vacias(B.impares,N,vacias);
+      res := res + vacias;
+      contar_censados_y_vacias(B.pares,N,vacias);
+      res := res + vacias;
       act := act.sig_calle;
     end loop;
-    return 0;
+    return res;
   end cuantos_vacios;
+
+
+
+  procedure eliminar_barrio(B: in out a_lista_calles; nom: t_nombre; calle_nodo: out a_lista_calles) is
+    act, ant: a_lista_calles := B;
+  begin
+    while act /= null and then act.calle = B.calle loop
+      act := act.sig_calle;
+    end loop;
+
+ 
+    if B /= null and then act = ant then
+      calle_nodo := act;
+      B := B.sig_calle;
+      calle_nodo.sig_calle := null;
+    else if act /= null then
+      calle_nodo := act;
+      ant.sig_calle := act.sig_calle;
+      calle_nodo.sig_calle := null;
+    else
+      calle_nodo:= null;
+    end if;
+    end if;
+
+  end eliminar_barrio;
+
+
+  procedure sustiutuir_barrio(B: in out a_lista_calles;nom_ant,nom_act : t_nombre) is
+
+    Calle_nodo: a_lista_calles;
+
+  begin
+
+    eliminar_barrio(B,nom_ant,calle_nodo);
+
+    if calle_nodo /= null then
+      calle_nodo.calle := nom_act;
+      Insertar_Ordenado(calle_nodo,calle_nodo);
+    end if;
+
+  end sustiutuir_barrio;
+
+
 
 end barrio;

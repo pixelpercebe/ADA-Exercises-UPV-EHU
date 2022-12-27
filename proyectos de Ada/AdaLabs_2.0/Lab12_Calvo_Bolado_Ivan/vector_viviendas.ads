@@ -16,7 +16,7 @@ PACKAGE Vector_Viviendas IS
    -- salida: secuencia de viviendas(SE)
    -- post: escribe informaci�n de las viviendas de VVs
 
-   function contar_vivienda_vacia(VVs : t_Vector_Viviendas) return integer;
+   procedure contar_censados_y_vacia(VVs : t_Vector_Viviendas; censados, vacias : out integer);
 
 END Vector_Viviendas;
 

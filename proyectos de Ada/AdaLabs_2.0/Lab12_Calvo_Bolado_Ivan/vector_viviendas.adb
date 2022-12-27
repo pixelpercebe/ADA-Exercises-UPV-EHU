@@ -25,15 +25,16 @@ end loop;
 
 end Escribir_Viviendas;
 
-function contar_vivienda_vacia(VVs : t_Vector_Viviendas) return integer is
-  cantidad : integer :=0;
+procedure contar_censados_y_vacia(VVs : t_Vector_Viviendas ; censados, vacias : out integer) is
 begin
+  vacias := 0;
+  censados := 0;
   for i in VVs'range loop
     if VVs(i).censados = 0 then
-      cantidad := cantidad + 1;
+      vacias := vacias + 1;
     end if;
+    censados := censados + VVs(i).censados;
   end loop;
-  return cantidad;
-end contar_vivienda_vacia;
+end contar_censados_y_vacia;
 
 end vector_viviendas;
