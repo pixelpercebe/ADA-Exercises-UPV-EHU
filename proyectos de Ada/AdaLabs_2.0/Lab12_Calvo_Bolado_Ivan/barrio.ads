@@ -23,4 +23,11 @@ PACKAGE Barrio IS
    -- salida: secuencia de edificios (SE)
    -- post: escribe la informaci�n de las viviendas del barrio B
 
+   function cuantos_censados(B: A_Lista_Calles) return integer;
+   --Post: la cantidad de habitantes del barrio
+
+   function cuantos_vacios(B: A_lista_calles) return integer;
+   --Post: devolvera la cantidad de viviendas vacias que hay en el barrio en 
+   --una vivienda vacia hay 0 censados.
+
 end Barrio;

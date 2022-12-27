@@ -17,11 +17,12 @@ begin
     else
       act.Sig_Calle := new t_nodo_calle;
       act := act.sig_calle;
-      end if;
+    end if;
       cargar_nombre(F,act.calle);
       get(F,impares);
       get(F,vacio);
       get(F,pares);
+      skip_line(F);
       Cargar_Edificios_Calle_Num(act.calle,impares,false,act.impares);
       Cargar_Edificios_Calle_Num(act.calle,pares,true,act.pares);
   end loop;
@@ -61,16 +62,42 @@ act : a_lista_calles := B;
 begin
 
   while act /= null loop
+    new_line;
+    new_line;
     Escribir_Nombre(act.calle);
     new_line;
     put_line("***Portales Pares***");
     escribir_edificios(act.pares);
     new_line;
     put_line("***Portales Impares***");
-    escribir_edificios(act.pares);
+    escribir_edificios(act.impares);
     act := act.sig_calle;
   end loop;
-
 end Escribir_Barrio;
+
+
+
+  function cuantos_censados(B : A_Lista_Calles) return integer is
+   suma: integer;
+   act : a_lista_calles := B;
+  begin
+   suma := 0;
+   while act /= null loop
+     suma := suma + act.impares.num + act.pares.num;
+     act := act.sig_calle;
+   end loop;
+   return suma;
+  end cuantos_censados;
+
+  function cuantos_vacios(B: A_lista_calles) return integer is
+    cantidad : integer := 0;
+    act : a_lista_calles := B;
+  begin
+    while act /= null loop
+      cantidad := cantidad + Contar_viviendas_vacia(act.impares) + Contar_viviendas_vacia(act.pares);
+      act := act.sig_calle;
+    end loop;
+    return 0;
+  end cuantos_vacios;
 
 end barrio;

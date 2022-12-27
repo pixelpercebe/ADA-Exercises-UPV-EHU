@@ -52,4 +52,15 @@ begin
 
 end Escribir_Edificios;
 
+function Contar_viviendas_vacia(E: a_lista_Edificios) return integer is
+  ed_act : a_lista_Edificios := E;
+  cantidad : integer := 0;
+begin
+  while ed_act /= null loop 
+      cantidad := cantidad + contar_vivienda_vacia(ed_act.viviendas.all);
+      ed_act := ed_act.Sig_Edificio;
+  end loop;
+  return cantidad;
+end Contar_viviendas_vacia;
+
 end Lista_Edificios;

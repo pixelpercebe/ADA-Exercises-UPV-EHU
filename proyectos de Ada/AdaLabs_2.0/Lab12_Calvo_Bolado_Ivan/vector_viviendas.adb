@@ -25,4 +25,15 @@ end loop;
 
 end Escribir_Viviendas;
 
+function contar_vivienda_vacia(VVs : t_Vector_Viviendas) return integer is
+  cantidad : integer :=0;
+begin
+  for i in VVs'range loop
+    if VVs(i).censados = 0 then
+      cantidad := cantidad + 1;
+    end if;
+  end loop;
+  return cantidad;
+end contar_vivienda_vacia;
+
 end vector_viviendas;

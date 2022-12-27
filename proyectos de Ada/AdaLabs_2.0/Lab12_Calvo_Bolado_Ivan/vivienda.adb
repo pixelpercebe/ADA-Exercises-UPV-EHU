@@ -17,4 +17,5 @@ begin
   put_line("Piso " & V.piso'img & V.mano & " Censados: " & V.censados'img & "- " & V.propietario.nom(1..v.propietario.cont));
 end Escribir_Vivienda;
 
+
 end vivienda;
