@@ -1,9 +1,0 @@
-title: Ada en VSCode
-description: Una configuración fácil de instalar para trabajar con Ada en el entorno de programación Visual Studio Code.
-author: Markel Ferro
-theme: jekyll-theme-leap-day
-encoding: utf-8
-show_downloads: true
-github:
-  zip_url: https://github.com/Markel/ada-en-vscode/releases/latest
-  tar_url: https://github.com/Markel/ada-en-vscode/releases/latest
